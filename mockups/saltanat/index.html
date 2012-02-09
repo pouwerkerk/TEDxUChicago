@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TEDxUChicago</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="script.js"></script>
+	<!-- 
+		If you want to use jQuery, just uncomment this line.^
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	-->
+	<!-- 
+		This HTML validates! 
+		http://validator.w3.org/check
+	-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<a href="/"><h1>TEDxUChicago</h1></a>
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/speakers/">Speakers</a></li>
+				<li><a href="/sponsors/">Sponsors</a></li>
+				<li><a href="/location/">Location</a></li>
+				<li><a href="/team/">Team</a></li>
+				<li><a href="/contact/">Contact Us</a></li>
+				<li><a href="/about/">About</a></li>
+			</ul>		
+		</div>
+		<div id="body">
+			<div id="main">
+				<a href="/contest/"><h2>Apply to be a student speaker!</h2></a>
+				<img alt="bruno" src="../images/5.png">
+			</div>
+			<div id="about">
+				<h3>What is TEDx?</h3>
+				<p>TEDxUChicago is a local, independently organized event at The University of Chicago that strives to re-create the unique experience found at TED, where the world´s leaders, thinkers and doers congregate to share what they are most passionate about. At its core, the fundamental goal of TED and The University of Chicago is to foster and spear great ideas. We aim to provide a platform where the smartest thinkers, greatest visionaries, and most fascinating teachers will be inspired and will have the opportunity to inspire others. Our conference will be held at The University of Chicago Campus on <b>Sunday, April 29th 2012</b> from 9am to 6pm, and will be centered on the theme: Revolutions. The diverse group of students, faculty, and alumni present will be able to learn from one another, both as speakers and attendees, and will leave the conference driven to creatively improve our collective future.</p>
+			</div>
+			<div id="social">
+				<div id="facebook">
+				<!--
+					Facebook Social Plugin: Like Box
+					via https://developers.facebook.com/docs/reference/plugins/like/
+					This probably won't show up locally — you'll need to upload this to a server first.
+				-->
+					<div id="fb-root"></div>
+					<script>(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=277429145641995";
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));</script>
+				</div>
+				<div id="twitter">
+				<!--
+					Twitter Button: Follow
+					https://twitter.com/about/resources/buttons#follow
+					This probably won't show up locally — you'll need to upload this to a server first.
+				-->
+					<a href="https://twitter.com/tedxuchicago" class="twitter-follow-button" data-show-count="false">Follow @tedxuchicago</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			Copyright &copy; 2012 TEDxUChicago. All rights reserved. This independent TEDx event is operated under license from TED.
+		</div>
+</div>
+
+</body>
+</html>

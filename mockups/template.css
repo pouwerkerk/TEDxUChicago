@@ -1,0 +1,7 @@
+@import url("../bootstrap/css/bootstrap.min.css");
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
