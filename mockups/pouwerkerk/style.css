@@ -1,7 +1,45 @@
-@import url("../bootstrap/css/bootstrap.min.css");
+/* @override http://tedx.com/pouwerkerk/style.css */
+@import url("bootstrap.min.css");
 
 * {
 	padding: 0;
 	margin: 0;
 	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#logo {
+	background: center center url(logo.png) no-repeat;
+	display: block;
+	width: 150px;
+	height: 20px;
+}
+
+#logo span {
+	display: none;
+}
+
+body {
+	padding-top: 75px;
+	padding-bottom: 50px;
+	background-image: url(bg.png);
+	background: #20201e url(texture.png) scroll center center;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #fff;
+	font-weight: normal;
+}
+
+p {
+	color: #bfbfbf;
+}
+
+b, strong {
+	color: #fff;
+}
+
+.hero-unit {
+	background: url(../images/12.jpg) 0 center;
+	text-align: right;
+	text-shadow: 0 2px 2px #333;
 }
