@@ -1,0 +1,27 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+body {
+	background: #d8d8d8 url(images/texture.png);
+}
+
+#wrapper {
+	max-width: 940px;
+	background: #FFF;
+	margin: 0 auto;
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+#wrapper div, #wrapper footer {
+	padding: 15px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.row {
+	margin-left: 0px;
+}
