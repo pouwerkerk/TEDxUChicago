@@ -1,3 +1,4 @@
+/* General Page Settings */
 * {
 	padding: 0;
 	margin: 0;
@@ -14,7 +15,7 @@ body {
 	margin: 0 auto;
 	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 #wrapper div, #wrapper footer {
@@ -22,6 +23,65 @@ body {
 	border-bottom: 1px solid #e5e5e5;
 }
 
+#wrapper h2 {
+	font-weight: lighter;
+	padding-bottom: 5px;
+	border-bottom: 1px solid red;
+}
+
 .row {
 	margin-left: 0px;
+}
+
+/* Header */
+#wrapper #header h2 {
+	border: none;
+}
+
+/* Hero */
+
+#wrapper #hero {
+	color: #fff;
+	text-align: right;
+	background: -10px center url(images/12.jpg);	
+}
+
+#wrapper #hero h2 {
+	border: none;
+	font-weight: lighter;
+	padding: 125px 0;
+	font-size: 28pt;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.75);
+}
+
+/* Speakers */
+
+#wrapper #speakers {}
+
+#wrapper #speakers h2 {}
+
+/* Event Details */
+
+#wrapper #event {}
+
+#wrapper #event h2 {}
+
+/* About */
+
+#wrapper #about {}
+
+#wrapper #about h2 {}
+
+/* Social Media */
+
+#wrapper #social {}
+
+#wrapper #social h2 {}
+
+/* Footer */
+
+#wrapper footer {}
+
+#wrapper footer h2 {
+	border: none;
 }
