@@ -9,6 +9,10 @@ body {
 	background: #d8d8d8 url(images/texture.png);
 }
 
+a, a:visited {
+	color:#ccc;
+}
+
 #wrapper {
 	max-width: 940px;
 	background: #FFF;
@@ -62,15 +66,118 @@ body {
 
 /* Event Details */
 
+#wrapper #divider {
+	background:url(images/divider-ribbon.png);
+	width:960px;
+	height:28px;
+	padding:0px;
+	margin-left:-10px;
+	margin-top:-10px;
+	border:none;
+	position:absolute;
+}
+
 #wrapper #event {}
 
 #wrapper #event h2 {}
+
+#event #info {
+	float:left;
+	width:480px;
+	margin-top:50px;
+}
+
+#event #info #headers {
+	float:left;
+	text-align:right;
+	font-weight:bold;
+	width:65px;
+	padding-right:5px;
+	border-right:1px solid red;
+}
+
+#event #info #text {
+	float:left;
+	text-align:left;
+	width:375px;
+	padding-left:5px;
+}
+
+#event div {
+	border:none;
+}
+
+#event #info div {
+	border:none;
+	padding:0px;
+}
+
+#event #map {
+	float:right;
+	width:360px;
+}
 
 /* About */
 
 #wrapper #about {}
 
 #wrapper #about h2 {}
+
+#about div {
+	border:none;
+}
+
+#about h1 {
+	font-size:22px;
+	font-weight:normal;
+}
+
+#about span img{
+	margin-bottom:-5px;
+	margin-left:-3px;
+}
+
+#about p {
+	font-size:14px;
+}
+
+#about #boxes, #boxes div {
+	border:none;
+	padding:0px;
+	margin-bottom:10px;
+}
+
+#boxes #team {
+	background:url(images/team.png);
+	width:290px;
+	height:207px;
+	-moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	margin-right:20px;
+	float:left;
+}
+
+#boxes #conference {
+	background:url(images/conference.png);
+	width:290px;
+	height:207px;
+	-moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	margin-right:20px;
+	float:left;
+}
+
+#boxes #contactus {
+	background:url(images/contactus.png);
+	width:290px;
+	height:207px;
+	-moz-box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	box-shadow: 0 0 3px 3px rgba(0,0,0,0.5);
+	float:left;
+}
 
 /* Social Media */
 
