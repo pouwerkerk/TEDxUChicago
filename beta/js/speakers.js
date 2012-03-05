@@ -1,7 +1,11 @@
 $(window).load(function(){
 	$(".speaker").click(function() {
-		$(".speaker").not(this).fadeOut();
-		// $(this).toggleClass( "next" );
-		$(this).toggleClass("next", 500);
+		if ($(this).hasClass("next")) {
+			$(".speaker").fadeIn();
+			$(this).removeClass("next", 500);
+		} else {
+			$(".speaker").not(this).hide();
+			$(this).addClass("next", 500);			
+		}
 	});
 });

@@ -1,79 +1,140 @@
+<!-- TODO:
+	- Change team to actual picture of team. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<title>TEDxUChicago</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap-responsive.min.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />	
+<!--	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>	
+	<script type="text/javascript" src="/js/bootstrap-scrollspy.min.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCz3bwFJk7RilMe0qxl_HGTW-YFW8pcdfo&sensor=false"></script>
 </head>
-<body>
-
+<body data-spy="scroll" data-target="#menu">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=142221745901241";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- Navbar (Danny)
 The navigation menu, And also what happens when scroll up. -->
-
-<div id="wrapper" class="row-fluid">
-	<!-- Begin Header -->
-	<div id="header" class="row">	
-		<h2>TEDxUChicago</h2>
-	</div>
-	<!-- Begin Hero -->	
-	<div id="hero" class="row">
-		<h2>Tickets on sale now.</h2>
-		
-	</div>
-	<!-- Begin Speakers -->	
-	<div id="speakers" class="row">
-		<h2>Speakers</h2>	
-	</div>
-	<!-- Begin Event Details -->
-    <div id="divider"></div>	
-	<div id="event" class="row">
-		<h2>Event</h2>
-        <div id="info">
-        	<div id="headers">
-            	When:<br /><br /><br />
-                Where:<br /><br /><br /><br />
-                What:<br /><br /><br />
-                How to Attend:<br />
-            </div>
-            <div id="text">
-            	Sunday, April 29th 2012<br />
-                9:00 A.M. - 6:00 P.M.<br /><br />
-                Mandel Hall, Reynolds Club, University of Chicago<br />
-                1131 East 57th Street Chicago, IL 60637<br />
-                <a href="http://maps.google.com/maps?f=d&source=s_q&hl=en&geocode=%3BCdjwtl803J3oFYmtfQIdulrH-iEdwM2jnDZyQQ&q=university+of+chicago+mandel+hall&aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&hnear=&t=h&ll=41.794752,-87.597127&spn=0.005599,0.007725&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Get directions to here</a><br /><br />
-                X# of incredible speakers from around the world delivering talks on a wide variety of topics. Blahbla bla marketing stuff.<br /><br />
-                Buy tickets <a href="#">here</a>.<br />
-            </div>	
+<div id="wrapper-bg">
+<div id="home">
+<div id="divider"></div>
+    <div id="wrapper" class="row-fluid">
+<div id="menu-wrapper">
+<div id="menu">
+	<ul class="nav">
+		<li><a href="#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="#event" class="event">Event Details</a></li>
+	    <li><a href="#about" class="about">About</a></li>
+    </ul>
+</div>
+</div>
+        <!-- Begin Hero -->	
+    	<div id="header" class="row">
+    		<a href="/" id="logo"><h1>TEDxUChicago</h1></a>
+		</div>
+		<div class="divider"></div>		
+		<div id="page">
+        <div id="hero" class="row">
+            <h2>Tickets on sale now.</h2>
+            
         </div>
-        <div id="map">
-        	<iframe width="360" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=university+of+chicago+mandel+hall&amp;aq=&amp;sll=41.790913,-87.598093&amp;sspn=0.005335,0.013078&amp;ie=UTF8&amp;hq=university+of+chicago+mandel+hall&amp;hnear=&amp;t=h&amp;ll=41.791041,-87.598608&amp;spn=0.005599,0.00751&amp;z=16&amp;output=embed"></iframe>
+        <!-- Begin Speakers -->	
+        <div class="section row" id="speakers">
+            <h2>Speakers</h2>	
+            
+<ul class="row">
+	<li class="speaker" id="degrey"><h3>Aubrey de Grey</h3></li>
+	<li class="speaker unannounced" id="two"></li>
+	<li class="speaker unannounced" id="three"></li>
+	<li class="speaker unannounced" id="four"></li>
+	<li class="speaker unannounced" id="five"></li>	
+	<li class="speaker unannounced" id="six"></li>
+	<li class="speaker unannounced" id="seven"></li>
+	<li class="speaker unannounced" id="eight"></li>
+</ul>
+<ul class="row">	
+	<li class="speaker unannounced" id="nine"></li>
+	<li class="speaker unannounced" id="ten"></li>	
+	<li class="speaker unannounced" id="eleven"></li>
+	<li class="speaker unannounced" id="twelve"></li>
+	<li class="speaker unannounced" id="thirteen"></li>
+	<li class="speaker unannounced" id="fourteen"></li>
+	<li class="speaker unannounced" id="fifteen"></li>	
+	<li class="speaker unannounced" id="sixteen"></li>		
+</ul>
+
+        </div>
+        <!-- Begin Event Details -->
+        <div class="section row" id="event">
+	        <div id="holder">
+    			<div id="details">
+				<h2>Event Details</h2>                
+                <ul>
+                    <li class="detail"><span class="label">When:</span><div class="value">Sunday, April 29th 2012<br/>9:00am - 6:00pm</div></li>
+                    <li class="detail"><span class="label">Where:</span><div class="value">Mandel Hall, Reynolds Club<br/>University of Chicago<br/>1131 East 57th Street<br/>Chicago, IL 60637<br/><a href="http://maps.google.com/maps?aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Directions &gt;</a></div></li>
+                    <li class="detail"><span class="label">What:</span><div class="value">16 incredible speakers from around the world delivering talks on a wide variety of topics.</div></li>
+                    <li class="detail"><span class="label">Tickets:</span><div class="value"><a href="#">Register &gt;</a></div></li>
+				</ul>
+                </div>
+                </div>
+			<div id="map_canvas" style="height:300px;width:100%"></div>
+        </div>
+        <!-- Begin About -->
+        <div class="section row" id="about">
+            <h2>What is <span class="logo-small">TEDxUChicago</span>?</h2>
+            <div><p>TEDxUChicago is a local, independently organized event at The University of Chicago that strives to re-create the unique experience found at TED, where the world´s leaders, thinkers and doers congregate to share what they are most passionate about. At its core, the fundamental goal of TED and The University of Chicago is to foster and spear great ideas. We aim to provide a platform where the smartest thinkers, greatest visionaries, and most fascinating teachers will be inspired and will have the opportunity to inspire others. We hope that at our conference the diverse group of students, faculty, and alumni present will be able to learn from one another, both as speakers and attendees, and will leave the conference driven to creatively improve our collective future.</p>
+        </div>
+        <div id="actions">
+        <a id="team" href="/team">Team</a>
+        <a id="last-year" href="/2011">TEDxUChicago 2011</a>
+        <a id="contact-us" href="/contact">Contact Us</a>
+        </div>
         </div>	
-	</div>
-	<!-- Begin About -->
-    <div id="divider"></div>
-	<div id="about" class="row">
-		<h2>About</h2>	
-        <div><h1>What is <span><img src="images/logo-black-small.png" width="158px" height="24px" ></span>?</h1>
-        <div><p>TEDxUChicago is a local, independently organized event at The University of Chicago that strives to re-create the unique experience found at TED, where the world´s leaders, thinkers and doers congregate to share what they are most passionate about. At its core, the fundamental goal of TED and The University of Chicago is to foster and spear great ideas. We aim to provide a platform where the smartest thinkers, greatest visionaries, and most fascinating teachers will be inspired and will have the opportunity to inspire others. We hope that at our conference the diverse group of students, faculty, and alumni present will be able to learn from one another, both as speakers and attendees, and will leave the conference driven to creatively improve our collective future.</p></div>
-	</div>
-    <div id="boxes">
-    <div id="team"></div>
-    <div id="conference"></div>
-    <div id="contactus"></div>
+        <!-- Begin Social Media Links -->
+        <div class="section row" id="social">
+          <div id="facebook">
+          	<h2>Like <span class="logo-small">TEDxUChicago</span>:</h2>
+			<div class="fb-like" data-href="http://facebook.com/tedxuchicago" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+		  </div>
+		  <div id="twitter">
+          	<h2>Follow <span class="logo-small">TEDxUChicago</span>:</h2>
+		  <a href="https://twitter.com/tedxuchicago" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @tedxuchicago</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		  </div>
+        </div>
+        </div>
+        <!-- Begin Footer -->
     </div>
-    </div>	
-	<!-- Begin Social Media Links -->
-    <div id="divider"></div>
-	<div id="social" class="row">
-		<h2>Social Media</h2>	
-	</div>	
-	<!-- Begin Footer -->
-	<footer>
-		<h2>Footer</h2>
-	</footer>	
+    <div id="footer-pattern">
+	    <footer>
+	    <h3>Navigation</h3>
+	<ul class="links">
+		<li><a href="#" class="logo">TEDxUChicago</a></li>
+	    <li><a href="#" class="speakers">Speakers</a></li>
+    	<li><a href="#" class="event">Event Details</a></li>
+	    <li><a href="#" class="about">About</a></li>
+    </ul>
+	<ul class="sosumi">
+		<li>&copy; 2012 TEDxUChicago. All rights reserved.</li>
+		<li class="unimportant">This independent TEDx event is operated under license from TED.</li>
+		<li class="unimportant">Designed by <a href="http://pieterouwerkerk.com/">Pieter Ouwerkerk</a>, Danny Henn and Saltanat Muslim-Ali.</li>
+	</ul>
+		</footer>	
+	</div>
+</div>
+<div id="ribbon"></div>
+
 </div>
 
 </body>
