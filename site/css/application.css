@@ -1,0 +1,233 @@
+/* @override 
+	http://tedx.com/css/register.css
+	http://tedxuchicago.com/css/application.css?v=1.1
+	http://tedxuchicago.com/css/application.css?v=1.0.1
+*/
+#page.register {
+	background: url(/images/application-background.jpg) center center;
+	display: block;
+	height: 1200px;
+	color: #fff;
+}
+
+.register #badge {
+	color: #333;
+	display: none;
+	background: url(/images/badge.png) -56px top no-repeat;
+	padding: 293px 231px 306px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	z-index: 0;
+	position: relative;
+	top: -200px;
+}
+
+.checkmark {
+	display: block;
+	background: url(/images/checkmark.png);
+	height: 172px;
+	width: 172px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.validator {
+	display: none;
+	color: #d64d41;
+	text-shadow: 0 -1px 0px rgba(255,255,255,0.25);	
+	font-size: 12px;
+}
+
+#word, #pronunciation {
+	font-family: Times New Roman;	
+}
+
+#pronunciation {
+	opacity: 0.5;
+	padding: 0 0 0 5px;
+}
+
+#application {
+	width: 650px;
+	margin: 0 auto;
+	background: rgba(0,0,0,0.7);
+	border-radius: 5px;
+	border: 1px solid rgba(255,255,255,0.25);
+	position: relative;
+	z-index: 1;
+	top: 25px;
+	display: block;
+	clear: both;
+	padding: 50px 50px 0;
+}
+
+#application h2 {
+	font-size: 22pt;
+	font-weight: lighter;
+	padding-bottom: 15px;
+	margin-bottom: 5px;	
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+}
+
+#application h3 {
+	padding: 25px 0 0;
+	font-weight: lighter;
+	border-bottom: 1px solid rgba(255,255,255,0.25);
+	margin-bottom: 5px;
+}
+
+.well {
+	text-align: center;
+	padding: 15px;
+	color: rgba(255,255,255, 0.75);
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.75);
+	background: rgba(255,255,255,0.2);
+	margin: 5px 0;
+	border-radius: 3px;
+	text-shadow: 0 -1px 1px #333;
+}
+
+.count {
+	text-shadow: 0 -1px 0px rgba(255,255,255,0.25);
+	text-align: right;
+	float: right;
+	font-size: 10pt;
+}
+
+.count.warning {
+	color: #910;
+}
+
+.count.alert {
+	color: #F00;
+}
+
+.tweetlength textarea {
+	box-shadow: inner 4px 4px 3px #333;
+	width: 275px;
+	height: 90px;	
+}
+
+.tweetlength {
+	width: 280px;
+}
+
+#application p {
+	padding: 10px 0;
+}
+
+#questions ul li {
+	display: inline;
+	list-style: none;
+}
+
+#questions ol li {
+	display: inline-table;
+	margin-right: 5px;
+}
+
+#questions ol li:last-child {
+	margin: 0;	
+}
+
+#questions ol li input {
+	width: 200px;
+	text-align: center;
+}
+
+form {
+	z-index: 1000;
+}
+
+textarea {
+	width: 100%;
+	clear: both;
+}
+
+.left, .right {
+	width: 250px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	margin-right: 35px;
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.input {
+	color: #fff;
+}
+
+label {
+	color: #fff;
+}
+
+#firstNamePreview, #lastNamePreview, #conversationTopicsPreview {
+	float: left;
+	clear: both;
+}
+
+#firstNamePreview, #lastNamePreview {
+	max-width: 462px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+#firstNamePreview {
+	font-size: 48pt;
+	line-height: 57pt;
+	margin-top: 80pt;
+	font-weight: bolder;
+}
+
+#lastNamePreview {
+	position: relative;
+	top: -19px;
+	font-size: 32pt;
+	line-height: 39pt;
+	font-weight: lighter;
+}
+
+#conversationTopicsPreview {
+	float: left;
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+	text-shadow: 0 -1px 1px #777;
+}
+
+i#glass {
+	position: absolute;
+	background: url(/images/glass.png);
+	display: block;
+	width: 478px;
+	height: 306px;
+}
+
+.submit {
+	text-align: center;
+	padding: 10px 0 30px;
+	position: relative;
+	float: left;
+	top: -170px;
+	width: 100%;
+}
+
+footer {
+	clear: both;
+	position: relative;
+	top: -140px;
+}
