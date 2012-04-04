@@ -12,6 +12,20 @@
 	<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>
 	<script type="application/javascript" src="/js/application.js?v=1.5"></script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19187523-1']);
+  _gaq.push(['_setDomainName', 'tedxuchicago.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 <body>
 <div id="wrapper-bg">
@@ -35,7 +49,8 @@
 		</div>
 		<div class="divider"></div>		
 		<div id="page" class="register">
-			<div id="application"><h2>Application to Attend</h2>
+			<div id="application"><h2>Request an Invitation</h2>
+			<p>We'd like to know more about who's attending TEDxUChicago.</p>
 			<form id="application-form" class="form-horizontal" method="POST" action="action.php">
 			<div class="left">
 				<label for="firstName">First Name:</label>

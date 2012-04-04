@@ -1,0 +1,5 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /hermes/bosweb/web296/b2960/ipg.tedxuchicagocom/site/accept/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user

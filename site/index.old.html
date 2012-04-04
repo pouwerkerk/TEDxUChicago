@@ -1,0 +1,177 @@
+<!-- TODO:
+	- Change team to actual picture of team. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TEDxUChicago</title>
+<!--	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.6" />	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>	
+	<script type="text/javascript" src="/js/bootstrap-scrollspy.min.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCz3bwFJk7RilMe0qxl_HGTW-YFW8pcdfo&sensor=false"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19187523-1']);
+  _gaq.push(['_setDomainName', 'tedxuchicago.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body data-spy="scroll" data-target="#menu">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=142221745901241";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Navbar (Danny)
+The navigation menu, And also what happens when scroll up. -->
+<div id="wrapper-bg">
+<div id="home">
+<div id="divider"></div>
+    <div id="wrapper" class="row-fluid">
+<div id="menu-wrapper">
+<div id="menu">
+	<ul class="nav">
+		<li><a href="#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="#event" class="event">Event Details</a></li>
+	    <li><a href="#about" class="about">About</a></li>
+	    <li><a href="/tickets" class="tickets">Tickets</a></li>
+    </ul>
+</div>
+</div>
+        <!-- Begin Hero -->	
+    	<div id="header" class="row">
+    		<a href="/" id="logo"><h1>TEDxUChicago</h1></a>
+        	<a href="/tickets" id="tickets" class="btn btn-large btn-success">Tickets &gt;</a>
+		</div>
+		<div class="divider"></div>		
+		<div id="page">
+        <div id="hero" class="row erickson">
+            <h3>Speaker Announced:</h3>
+            <h2>Gary Erickson</h2>
+        </div>
+        <!-- Begin Speakers -->	
+        <div class="section row" id="speakers">
+            <h2>Speakers</h2>	
+<ul class="row">
+	<li class="speaker" id="degrey">
+		<h3>Aubrey de Grey</h3>
+		<p>Dr. Aubrey de Grey is a biomedical gerontologist. As the Chief Science Officer of the SENS Foundation (a foundation working to develop widespread access to rejuvenation biotechnologies), author of numerous journal articles and books, and board member of a handful of editorial and scientific advisory boards, it is incontestable that Dr. Aubrey de Grey has dedicated his life to the science of combating the aging process. He received his BA and Ph.D. from the University of Cambridge, however, his original field was computer science.</p>
+		<p>Dr. de Grey is a Fellow of both the Gerontological Society of America and the American Aging Association and sits on the editorial and scientific advisory boards of numerous journals and organisations. He has appeared on countless shows, was even featured in the Max Wexler documentary, How to Live Forever, and has also spoken at a number of world-renowned events, including TED.</p>
+	</li>
+	<li class="speaker" id="parviz">
+		<h3>Babak Parviz</h3>
+		<p>Babak Parviz is on the faculty of the University of Washington and is the Associate Director of the University's Micro-scale Life Sciences Center. While doing his postdoctoral research at Harvard University he worked on developing novel nanofabrication technologies, self-assembled systems, low-cost biosensing, and using organics for electronics and MEMS.  Babak is a founding member of the American Academy of Nanomedicine; a senior member of the IEEE and affiliate of many other renowned scientific associations.</p>
+		<p>Babak was selected by the MIT Technology Review Magazine as one of the top 35 innovators in the world under the age of 35 in 2007 and in that same year also selected as a Rising Star Investigator in genomics by the Genome Technology Magazine. He has worked to create a multipurpose contact lens, which could function to aid people with impaired hearing, or even one day display text, translate speech into captions in real time or offer visual cues from a navigation system.</p>
+	
+	</li>
+	<li class="speaker" id="roe">
+		<h3>Catherine Roe</h3>
+		<p>As the Head of Consumer Packaged Goods (CPG) at Google, Catherine Roe helps drive online advertising initiatives for top midwest CPG clients. With her expertise in marketing, shopping behavior, and sales, Catherine helps Google to leverage digital media in connecting CPG clients to their target consumers. She contributes to the Shopper Revolution by focusing on building creative sales solutions and developing highly productive teams.</p>
+	</li>
+	<li class="speaker" id="gerber">
+		<h3>Elizabeth Gerber</h3>
+		<p>Elizabeth Gerber is a professor in the Segal Design Institute at Northwestern Universtiy. She is also the principle investigator for The Creative Action Lab, which investigates how technology fosters innovation; she specifically focuses on researching crowdsourcing, crowdfunding, and innovation education. As the founder of Design for America, an award winning national educational initiative, she helps teach young adults how to create change using tangible solutions.</p>
+	</li>
+	<li class="speaker" id="erickson">
+		<h3>Gary Erickson</h3>
+		<p>Gary Erickson, along with his wife Kit Crawford, is the founder and co-CEO of Clif Bar & Company. He is dedicated to providing nutritious and organic foods and drinks for sport and healthy snacking for the global community. His love for and commitment to the outdoors, cycling, great food, and socially responsible business has lead him to create a company with a unique business model. Clif Bar & Company stands out as a model of innovative environmental activism in the private sector, as well as a reliable source of snacks worth eating.</p></li>
+	<li class="speaker unannounced" id="six"></li>
+	<li class="speaker unannounced" id="seven"></li>
+	<li class="speaker unannounced" id="eight"></li>
+</ul>
+<ul class="row">	
+	<li class="speaker unannounced" id="nine"></li>
+	<li class="speaker unannounced" id="ten"></li>	
+	<li class="speaker unannounced" id="eleven"></li>
+	<li class="speaker unannounced" id="twelve"></li>
+	<li class="speaker unannounced" id="thirteen"></li>
+	<li class="speaker unannounced" id="fourteen"></li>
+	<li class="speaker unannounced" id="fifteen"></li>
+	<li class="speaker unannounced" id="sixteen"></li>	
+</ul>
+
+        </div>
+        <!-- Begin Event Details -->
+        <div class="section row" id="event">
+	        <div id="holder">
+    			<div id="details">
+				<h2>Event Details</h2>                
+                <ul>
+                    <li class="detail"><span class="label">When:</span><div class="value">Sunday, April 29th 2012<br/>9:00am - 6:00pm</div></li>
+                    <li class="detail"><span class="label">Where:</span><div class="value">Mandel Hall, Reynolds Club<br/>University of Chicago<br/>1131 East 57th Street<br/>Chicago, IL 60637<br/><a href="http://maps.google.com/maps?aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Directions &gt;</a></div></li>
+                    <li class="detail"><span class="label">What:</span><div class="value">15 incredible speakers from around the world delivering talks on a wide variety of topics.</div></li>
+                    <li class="detail"><span class="label">Tickets:</span><div class="value"><a href="/tickets">Apply &gt;</a></div></li>
+				</ul>
+                </div>
+                </div>
+			<div id="map_canvas" style="height:300px;width:100%"></div>
+        </div>
+        <!-- Begin About -->
+        <div class="section row" id="about">
+            <h2>What is <span class="logo-small">TEDxUChicago</span>?</h2>
+            <div><p>TEDxUChicago is a local, independently organized event at The University of Chicago that strives to re-create the unique experience found at TED, where the world´s leaders, thinkers and doers congregate to share what they are most passionate about. At its core, the fundamental goal of TED and The University of Chicago is to foster and spear great ideas. We aim to provide a platform where the smartest thinkers, greatest visionaries, and most fascinating teachers will be inspired and will have the opportunity to inspire others. We hope that at our conference the diverse group of students, faculty, and alumni present will be able to learn from one another, both as speakers and attendees, and will leave the conference driven to creatively improve our collective future.</p>
+        </div>
+        <div id="actions">
+        <a id="team" href="/team">Team</a>
+        <a id="last-year" href="http://2011.tedxuchicago.com">TEDxUChicago 2011</a>
+        <a id="contact-us" href="/contact">Contact Us</a>
+        </div>
+        </div>	
+        <!-- Begin Social Media Links -->
+        <div class="section row" id="social">
+          <div id="facebook">
+          	<h2>Like <span class="logo-small">TEDxUChicago</span>:</h2>
+			<div class="fb-like" data-href="http://facebook.com/tedxuchicago" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+		  </div>
+		  <div id="twitter">
+          	<h2>Follow <span class="logo-small">TEDxUChicago</span>:</h2>
+		  <a href="https://twitter.com/tedxuchicago" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @tedxuchicago</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		  </div>
+		  <!--<div id="youtube">
+		    <h2>Watch <span class="logo-small">TEDxUChicago</span>:</h2>
+		  </div>-->
+        </div>
+        </div>
+        <!-- Begin Footer -->
+    </div>
+    <div id="footer-pattern">
+	    <footer>
+	    <h3>Navigation</h3>
+	<ul class="links">
+		<li><a href="#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="#event" class="event">Event Details</a></li>
+	    <li><a href="#about" class="about">About</a></li>
+   	    <li><a href="/tickets" class="tickets">Tickets</a></li>
+    </ul>
+	<ul class="sosumi">
+		<li>&copy; 2012 TEDxUChicago. All rights reserved.</li>
+		<li class="unimportant">This independent TEDx event is operated under license from TED.</li>
+		<li class="unimportant">Designed by <a href="http://pieterouwerkerk.com/">Pieter Ouwerkerk</a>, Danny Henn and Saltanat Muslim-Ali.</li>
+	</ul>
+		</footer>	
+	</div>
+</div>
+<div id="ribbon"></div>
+
+</div>
+
+</body>
+</html>
