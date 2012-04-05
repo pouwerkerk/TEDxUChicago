@@ -1,0 +1,1 @@
+[04-Apr-2012 23:48:15] PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/php_openssl.dll' - /usr/lib64/php/modules/php_openssl.dll: cannot open shared object file: No such file or directory in Unknown on line 0
