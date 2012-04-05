@@ -6,11 +6,11 @@
  */
 
 // db options
-define('DB_NAME', 'tedx_shortener');
-define('DB_USER', 'tedx_shortener');
-define('DB_PASSWORD', '(u2qbKcvgozb%d33uT[2$0%kPPnUJK');
-define('DB_HOST', 'tedxuchicagocom.ipagemysql.com');
-define('DB_TABLE', 'shortenedurls');
+define('DB_NAME', 'tedxuchi_shorten');
+define('DB_USER', 'tedxuchi_shorten');
+define('DB_PASSWORD', 'uRv)uqjw;3wms3284g6q');
+define('DB_HOST', 'localhost');
+define('DB_TABLE', 'short_urls');
 
 // connect to database
 mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);

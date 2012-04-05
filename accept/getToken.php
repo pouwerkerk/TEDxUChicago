@@ -4,7 +4,7 @@ $url = "http://ubazaar.uchicago.edu/tools/api/token.php?key=J16K60YTJU0UKR6&type
 $variable = file_get_contents($url);
 $decoded = json_decode($variable);
 
-$mysqli = new mysqli('tedxuchicagocom.ipagemysql.com', 'apply_attend', '3W2MuJLh9iem9kh4P6snhjya', 'apply_attend'); 
+$mysqli = new mysqli('localhost', 'tedxuchi_apply', '33GT9j9YaTUj8?B)d4hw', 'tedxuchi_apply'); 
 if ($mysqli->connect_errno) {
  	$result = array("status" => "failure");
 }

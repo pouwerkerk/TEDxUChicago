@@ -13,7 +13,6 @@ function applyMessage($token) {
 function submission() {
 
 $mysqli = new mysqli('localhost', 'tedxuchi_apply', '33GT9j9YaTUj8?B)d4hw', 'tedxuchi_apply');
-// $mysqli = new mysqli('tedxuchicagocom.ipagemysql.com', 'apply_attend', '3W2MuJLh9iem9kh4P6snhjya', 'apply_attend'); 
 if ($mysqli->connect_errno) {
  	$result = array("result" => "failure");
     exit();
