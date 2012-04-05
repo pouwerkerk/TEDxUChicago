@@ -1,0 +1,158 @@
+<!-- TODO:
+	- Change team to actual picture of team. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TEDxUChicago</title>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/application.css?v=1.0.1" />
+	<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>
+	<script type="application/javascript" src="/js/application.js?v=1.5"></script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19187523-1']);
+  _gaq.push(['_setDomainName', 'tedxuchicago.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="wrapper-bg">
+<div id="home">
+<div id="divider"></div>
+    <div id="wrapper" class="row-fluid">
+<div id="menu-wrapper">
+<div id="menu">
+	<ul class="nav">
+		<li><a href="/#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="/#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="/#event" class="event">Event Details</a></li>
+	    <li><a href="/#about" class="about">About</a></li>
+   	    <li><a href="/tickets" class="tickets">Tickets</a></li>
+    </ul>
+</div>
+</div>
+        <!-- Begin Hero -->	
+    	<div id="header" class="row">
+    		<a href="/" id="logo"><h1>TEDxUChicago</h1></a>
+		</div>
+		<div class="divider"></div>		
+		<div id="page" class="register">
+			<div id="application"><h2>Request an Invitation</h2>
+			<p>We'd like to know more about who's attending TEDxUChicago.</p>
+			<form id="application-form" class="form-horizontal" method="POST" action="action.php">
+			<div class="left">
+				<label for="firstName">First Name:</label>
+				<input type="text" placeholder="Your" autofocus name="firstName" id="firstName" class="input-xlarge"/>
+				<div class="validator">Please enter your first name.</div>
+				<br/>
+				<label for="lastName">Last Name:</label>
+				<input type="text" placeholder="Name" name="lastName" id="lastName" class="input-xlarge"/>
+				<div class="validator">Please enter your last name.</div>				
+			</div>
+			<div class="right">
+				<label for="email">Email:</label>
+				<input type="text" placeholder="info@tedxuchicago.com" name="email" id="email" class="input-xlarge"/>
+				<div class="validator">Please enter your email address.</div>				
+			</div>
+			<div class="clear"></div>
+			<h3>Quick Questions</h3>
+			<div class="left">
+				<label for="questionTwo">
+					During the opening remarks of TEDxUChicago 2012, the MC says you'll hear many definitions of the word "revolution" throughout the day.
+					<br/>
+					<br/>
+					What's your definition of <span id="word">rev&bull;o&bull;lu&bull;tion</span><span</p><span id="pronunciation">|rev&#601;'loosh&#601;n|</span>:
+				</label>
+				<div class="tweetlength">
+					<textarea class="input-xlarge tweetlength" id="questionOne" name="questionOne"></textarea>
+					<span class="count">140</span>
+					<!--<label class="checkbox">
+    					<input type="checkbox"> Tweet this? 
+					</label>-->
+					<div class="validator">Please enter an answer to this question.</div>
+				</div>
+			</div>
+			<div class="right">
+				<label for="questionTwo">
+					You walk into TEDxUChicago and there's an open seat next to an artist, a businessman and a scientist.
+					<br/>
+					<br/>
+					Who would you sit next to and why?
+				</label>
+				<div class="tweetlength">
+					<textarea class="input-xlarge" id="questionTwo" name="questionTwo"></textarea>
+					<span class="count">140</span>
+					<!-- <label class="checkbox">
+	   					<input type="checkbox"> Tweet this?
+					</label> -->
+					<div class="validator">Please enter an answer to this question.</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<h3>One-Word Responses</h3>			
+			<div id="questions">
+				<label for="firstTopic">In the following three spaces, give a one-word answer to three of the following questions:</label>
+				<ul class="well">
+					<li>The next revolution is&hellip;</li>
+					<li>What do you want to learn about?</li>
+					<li>What are you an expert in?</li>
+					<li>What do you dream about?</li>
+					<li>What revolution inspires you?</li>
+				</ul>
+				<ol>
+					<li><input type="text" name="firstTopic" id="firstTopic" class="input-xlarge topic"/>
+									<div class="validator">Please enter a first answer.</div></li>
+					<li><input type="text" name="secondTopic" id="secondTopic" class="input-xlarge topic"/>
+									<div class="validator">Please enter a second answer.</div></li>
+					<li><input type="text" name="thirdTopic" id="thirdTopic" class="input-xlarge topic"/>
+									<div class="validator">Please enter a third answer.</div></li>			
+				</ol>
+			</div>
+			</div>
+			<div id="badge">
+				<span id="firstNamePreview">Your</span>
+				<span id="lastNamePreview">Name</span>
+				<span id="conversationTopicsPreview">Technology &bull; Entertainment &bull; Design</span>
+				<i id="glass"></i>				
+			</div>
+			<div class="submit">
+				<button class="btn btn-large btn-success" id="submit" type="submit">Submit</button>
+			</div>
+			</form>
+		</div>
+		<div class="clear"></div>
+</div>		
+	    <footer>
+	    <h3>Navigation</h3>
+	<ul class="links">
+		<li><a href="/#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="/#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="/#event" class="event">Event Details</a></li>
+	    <li><a href="/#about" class="about">About</a></li>
+	    <li><a href="/tickets" class="tickets">Tickets</a></li>	    
+    </ul>
+	<ul class="sosumi">
+		<li>&copy; 2012 TEDxUChicago. All rights reserved.</li>
+		<li class="unimportant">This independent TEDx event is operated under license from TED.</li>
+		<li class="unimportant">Designed by <a href="http://pieterouwerkerk.com/">Pieter Ouwerkerk</a>, Danny Henn and Saltanat Muslim-Ali.</li>
+	</ul>
+		</footer>	
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>
