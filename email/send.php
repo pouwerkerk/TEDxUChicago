@@ -14,10 +14,9 @@ function sendMessage($email_address, $email_name, $email_subject, $email_content
 	$HTML_content = email_HTML($email_content, $email_name);
 	
 	try { 
-		$mail->Host = "smtp.gmail.com"; // SMTP server
 		$mail->SMTPDebug = 1;										 // enables SMTP debug information (for testing)
 		$mail->SMTPAuth = true;									// enable SMTP authentication
-		$mail->Host = "ssl://smtp.gmail.com"; // sets the SMTP server
+		$mail->Host = "ssl://box804.bluehost.com"; // sets the SMTP server
 		$mail->Port = 465;										// set the SMTP port for the GMAIL server
 		
 		$mail->Username = "info@tedxuchicago.com"; // SMTP account username
@@ -43,5 +42,7 @@ function sendMessage($email_address, $email_name, $email_subject, $email_content
 		
 	return;
 }
+
+sendMessage("pieter.ouwerkerk@gmail.com", "Pieter Ouwerkerk", "Test", "Test");
 
 ?>
