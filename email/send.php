@@ -43,6 +43,6 @@ function sendMessage($email_address, $email_name, $email_subject, $email_content
 	return;
 }
 
-sendMessage("pieter.ouwerkerk@gmail.com", "Pieter Ouwerkerk", "Test", "Test");
+// sendMessage("pieter.ouwerkerk@gmail.com", "Pieter Ouwerkerk", "Test", "Test");
 
 ?>
