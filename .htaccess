@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tedxuchicago\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.tedxuchicago\.com$
+RewriteRule ^2011\/?$ "http\:\/\/2011\.tedxuchicago\.com\/" [R=301,L]
+
