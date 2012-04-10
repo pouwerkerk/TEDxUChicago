@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://ubazaar.uchicago.edu/tools/api/token.php?key=J16K60YTJU0UKR6&type=2&lim=3";
+$url = "http://ubazaar.uchicago.edu/tools/api/token.php?key=J16K60YTJU0UKR6&type=2&lim=10";
 $variable = file_get_contents($url);
 $decoded = json_decode($variable);
 
