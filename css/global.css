@@ -24,7 +24,7 @@ a:hover {
 
 #home {
 	position: absolute;
-	height:156px;
+	height:206px;
 	width:100%;
 	border-bottom: 18px solid #c31d00;
 	background: url(/images/top-pattern.png) 0;
@@ -82,7 +82,7 @@ a:hover {
 #menu-wrapper {
 	position: absolute;
 	left: -225px;
-	top: 84px;
+	top: 4px;
 	z-index: -20;
 }
 
@@ -118,13 +118,15 @@ a:hover {
 #menu .active a {
 	background: rgba(0,0,0,0.2);
 }
-
+	
 #menu a.logo, #menu a.logo:hover {
-	background:url(/images/menu-logo.png) no-repeat #000;
-	padding-top: 64px;
-	height: 0;
-	width:220px;
-	overflow: hidden;
+    background: url("/images/menu-logo-vertical.png") no-repeat scroll 0 0 #000000;
+    height: 0;
+    overflow: hidden;
+    padding-top: 220px;
+    width: 64px;
+    position: relative;
+    left: 120px;
 }
 
 /* Header */
@@ -142,7 +144,7 @@ a:hover {
 }
 
 #header a#logo {
-	margin: 26px 0;
+	margin: 51px 0;
 	height:0;
 	overflow: hidden;
 	padding-top: 100px;
@@ -153,11 +155,11 @@ a:hover {
 }
 
 #header {
-	height: 152px;
+	height: 202px;
 }
 
 #tickets {
-	margin-top: 50px;
+	margin-top: 75px;
 	float: right;
 	width: 100px;
 }
