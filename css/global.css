@@ -118,13 +118,15 @@ a:hover {
 #menu .active a {
 	background: rgba(0,0,0,0.2);
 }
-
+	
 #menu a.logo, #menu a.logo:hover {
-	background:url(/images/menu-logo.png) no-repeat #000;
-	padding-top: 64px;
-	height: 0;
-	width:220px;
-	overflow: hidden;
+    background: url("/images/menu-logo-vertical.png") no-repeat scroll 0 0 #000000;
+    height: 0;
+    overflow: hidden;
+    padding-top: 220px;
+    width: 64px;
+    position: relative;
+    left: 120px;
 }
 
 /* Header */
