@@ -120,7 +120,7 @@ a:hover {
 }
 	
 #menu a.logo, #menu a.logo:hover {
-    background: url("/images/menu-logo-vertical.png") no-repeat scroll 0 0 #000000;
+    background: url(/images/menu-logo-vertical.png) no-repeat scroll 0 0 #000000;
     height: 0;
     overflow: hidden;
     padding-top: 220px;
