@@ -192,6 +192,19 @@ The navigation menu, And also what happens when scroll up. -->
 <div id="ribbon"></div>
 
 </div>
-
+<div id=”personalize-wrapper”>
+	<div id=”personalize”>
+<a href="/tickets" id="tickets" class="btn btn-large btn-success">Get Your Tickets Now!&gt;</a>
+	</div>
+</div>
 </body>
+
+<script type="text/javascript">
+$('#personalize-wrapper').appear(function() {
+	$("#personalize").animate({
+    	marginLeft: "15px"
+	}, 250 );  
+});
+</script>
+
 </html>
