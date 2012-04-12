@@ -358,6 +358,19 @@ a:hover {
 	background-image: url(/images/speakers/thumbnails/lloyd.jpg);
 }
 
+#Raghu {
+	background-image: url(/images/speakers/thumbnails/Raghu.jpg);
+}
+
+#feldman {
+	background-image: url(/images/speakers/thumbnails/feldman.jpg);
+}
+
+#mohamed {
+	background-image: url(/images/speakers/thumbnails/mohamed.jpg);
+}
+
+
 #degrey.next {
 	background-image: url(/images/speakers/degrey.jpg);
 }
@@ -400,6 +413,18 @@ a:hover {
 
 #lloyd.next {
 	background-image: url(/images/speakers/lloyd.jpg);
+}
+
+#Raghu.next {
+	background-image: url(/images/speakers/Raghu.jpg);
+}
+
+#feldman.next {
+	background-image: url(/images/speakers/feldman.jpg);
+}
+
+#mohamed.next {
+	background-image: url(/images/speakers/mohamed.jpg);
 }
 
 #roe.speaker, #roe.speaker p, #erickson.speaker, #erickson.speaker p, #gerber.speaker, #gerber.speaker p {
