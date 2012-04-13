@@ -205,6 +205,12 @@ a:hover {
 	font-style: normal;
 }
 
+#hero.raghu {
+	background: -10px center url(/images/speakers/heroes/hero-raghu.jpg);
+	font-weight: normal;
+	font-style: normal;
+}
+
 #wrapper #hero h2, #wrapper #hero h3 {
 	border: none;
 	font-weight: lighter;
