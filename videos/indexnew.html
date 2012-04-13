@@ -1,0 +1,103 @@
+<!-- TODO:
+	- Change team to actual picture of team. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TEDxUChicago</title>
+<!--	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" /> -->
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.7" />	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>	
+	<script type="text/javascript" src="/js/bootstrap-scrollspy.min.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19187523-1']);
+  _gaq.push(['_setDomainName', 'tedxuchicago.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body data-spy="scroll" data-target="#menu">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=142221745901241";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Navbar (Danny)
+The navigation menu, And also what happens when scroll up. -->
+<div id="wrapper-bg">
+<div id="home">
+<div id="divider"></div>
+    <div id="wrapper" class="row-fluid">
+<div id="menu-wrapper">
+<div id="menu">
+	<ul class="nav">
+		<li><a href="#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="#event" class="event">Event Details</a></li>
+	    <li><a href="#about" class="about">About</a></li>
+	    <li><a href="/tickets" class="tickets">Tickets</a></li>
+	   	<li><a href="/contact" class="contact-us">Contact Us</a></li>
+    </ul>
+</div>
+</div>
+        <!-- Begin Hero -->	
+    	<div id="header" class="row">
+    		<a href="/" id="logo"><h1>TEDxUChicago</h1></a>
+        	<a href="/tickets" id="tickets" class="btn btn-large btn-success">Tickets &gt;</a>
+		</div>
+		<div class="divider"></div>		
+		<div id="page">
+        
+        <!-- Begin Footer -->
+    </div>
+    <div id="footer-pattern">
+	    <footer>
+	    <h3>Navigation</h3>
+	<ul class="links">
+		<li><a href="#home" class="logo">TEDxUChicago</a></li>
+	    <li><a href="#speakers" class="speakers">Speakers</a></li>
+    	<li><a href="#event" class="event">Event Details</a></li>
+	    <li><a href="#about" class="about">About</a></li>
+   	    <li><a href="/tickets" class="tickets">Tickets</a></li>
+    </ul>
+	<ul class="sosumi">
+		<li>&copy; 2012 TEDxUChicago. All rights reserved.</li>
+		<li class="unimportant">This independent TEDx event is operated under license from TED.</li>
+		<li class="unimportant">Designed by <a href="http://pieterouwerkerk.com/">Pieter Ouwerkerk</a>, Danny Henn and Saltanat Muslim-Ali.</li>
+	</ul>
+		</footer>	
+	</div>
+</div>
+<div id="ribbon"></div>
+
+</div>
+<div id=”personalize-wrapper”>
+	<div id=”personalize”>
+<a href="/tickets" id="tickets" class="btn btn-large btn-success">Get Your Tickets Now!&gt;</a>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+$('#personalize-wrapper').appear(function() {
+	$("#personalize").animate({
+    	marginLeft: "15px"
+	}, 250 );  
+});
+</script>
+
+</html>
