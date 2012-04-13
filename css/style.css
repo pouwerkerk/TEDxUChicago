@@ -1,6 +1,7 @@
 /* @override 
 	http://tedx.com/css/style.css?v=1.5
 	http://tedxuchicago.com/css/style.css?v=1.6
+	http://tedx.com/css/style.css?v=1.7
 */
 * {
 	padding: 0;
@@ -216,9 +217,12 @@ a:hover {
 	font-weight: lighter;
 	padding: 15px;
 	padding-top: 0;
-	text-align: center;
-	font-size: 28pt;
+	font-size: 40pt;
 	text-shadow: 0px 2px 5px rgba(0,0,0,0.75);
+}
+
+#wrapper #hero h2 {
+	padding-top: 75pt;
 }
 
 #wrapper #hero h3 {
@@ -250,14 +254,15 @@ a:hover {
 }
 
 #wrapper #hero h4 {
-	color:#ff2b06;
+	color: #FFF;
 	text-align:left;
 	padding-left:25px;
-	font-size: 40pt;
-	padding-top: 50px;
+	font-size: 24pt;
+	padding-top: 20px;
 	font-weight: bold;
 	padding-bottom: 10px;
 	position: relative;
+	text-shadow: rgba(0,0,0,0.5) 0 2px 2px;
 }
 
 /* Speakers */
