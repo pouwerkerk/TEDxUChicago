@@ -23,8 +23,8 @@ a:hover {
 
 #home {
 	position: absolute;
-	height: 156px;
-	width: 100%;
+	height:206px;
+	width:100%;
 	border-bottom: 18px solid #c31d00;
 	background: url(/images/top-pattern.png) 0;
 	box-shadow: 0 1px 1px rgba(0,0,0,0.4);
@@ -49,9 +49,7 @@ a:hover {
 #page {
 	background: #fff;
 	-moz-box-shadow: 0px 0px 10px #000;
-	-webkit-box-shadow: 0px 0px 10
-
-px #000/*rgba(0,0,0,0.5)*/;
+	-webkit-box-shadow: 0px 0px 10px #000/*rgba(0,0,0,0.5)*/;
 	box-shadow: 0 0 10px #000;
 }
 
@@ -80,15 +78,15 @@ px #000/*rgba(0,0,0,0.5)*/;
 #menu-wrapper {
 	position: absolute;
 	left: -225px;
-	top: 107px;
+	top: 4px;
 	z-index: -20;
 }
 
 #menu {
-	position: fixed;
-	text-align: right;
-	color: white;
-	font-size: 20px;
+	position:fixed;
+	text-align:right;
+	color:white;
+	font-size:20px;
 	z-index: -1;
 }
 
@@ -103,10 +101,10 @@ px #000/*rgba(0,0,0,0.5)*/;
 	text-decoration: none;
 	color: #fff;
 	width: 210px;
-	margin-bottom: 4px;
-	height: 44px;
-	padding-top: 20px;
-	padding-right: 50px;
+	margin-bottom:4px;
+	height:44px;
+	padding-top:20px;
+	padding-right:50px;		
 }
 
 #menu a:hover {
@@ -118,11 +116,13 @@ px #000/*rgba(0,0,0,0.5)*/;
 }
 
 #menu a.logo, #menu a.logo:hover {
-	background: url(/images/menu-logo.png) no-repeat #000;
-	padding-top: 64px;
-	height: 0;
-	width: 220px;
-	overflow: hidden;
+    background: url(/images/menu-logo-vertical.png) no-repeat scroll 0 0 #000000;
+    height: 0;
+    overflow: hidden;
+    padding-top: 220px;
+    width: 64px;
+    position: relative;
+    left: 157px;
 }
 
 /* Header */
@@ -140,22 +140,22 @@ px #000/*rgba(0,0,0,0.5)*/;
 }
 
 #header a#logo {
-	margin: 26px 0;
-	height: 0;
+	margin: 51px 0;
+	height:0;
 	overflow: hidden;
 	padding-top: 100px;
 	width: 500px;
 	display: block;
 	float: left;
-	background: url(/images/logo.png) no-repeat;
+	background:url(/images/logo.png) no-repeat;
 }
 
 #header {
-	height: 152px;
+	height: 202px;
 }
 
 #tickets {
-	margin-top: 50px;
+	margin-top: 75px;
 	float: right;
 	width: 100px;
 }
@@ -205,6 +205,12 @@ px #000/*rgba(0,0,0,0.5)*/;
 	font-style: normal;
 }
 
+#hero.raghu {
+	background: -10px center url(/images/speakers/heroes/hero-raghu.jpg);
+	font-weight: normal;
+	font-style: normal;
+}
+
 #wrapper #hero h2, #wrapper #hero h3 {
 	border: none;
 	font-weight: lighter;
@@ -218,6 +224,37 @@ px #000/*rgba(0,0,0,0.5)*/;
 #wrapper #hero h3 {
 	font-size: 18pt;
 	padding-top: 110px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#wrapper #hero.hero-raghu h3 {
+	text-align:left;
+	padding-left:25px;
+	font-size: 18pt;
+	padding-top: 75px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#wrapper #hero.hero-raghu h2 {
+	text-align:right;
+	padding-left:25px;
+	font-size: 18pt;
+	padding-top: 75px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#wrapper #hero h4 {
+	color:#ff2b06;
+	text-align:left;
+	padding-left:25px;
+	font-size: 40pt;
+	padding-top: 50px;
 	font-weight: bold;
 	padding-bottom: 10px;
 	position: relative;
@@ -358,6 +395,19 @@ px #000/*rgba(0,0,0,0.5)*/;
 	background-image: url(/images/speakers/thumbnails/lloyd.jpg);
 }
 
+#betina {
+	background-image: url(/images/speakers/thumbnails/Raghu.jpg);
+}
+
+#feldman {
+	background-image: url(/images/speakers/thumbnails/feldman.jpg);
+}
+
+#dahshan {
+	background-image: url(/images/speakers/thumbnails/mohamed.jpg);
+}
+
+
 #degrey.next {
 	background-image: url(/images/speakers/degrey.jpg);
 }
@@ -400,6 +450,18 @@ px #000/*rgba(0,0,0,0.5)*/;
 
 #lloyd.next {
 	background-image: url(/images/speakers/lloyd.jpg);
+}
+
+#betina.next {
+	background-image: url(/images/speakers/Raghu.jpg);
+}
+
+#feldman.next {
+	background-image: url(/images/speakers/feldman.jpg);
+}
+
+#dahshan.next {
+	background-image: url(/images/speakers/mohamed.jpg);
 }
 
 #roe.speaker, #roe.speaker p, #erickson.speaker, #erickson.speaker p, #gerber.speaker, #gerber.speaker p {
@@ -471,6 +533,10 @@ px #000/*rgba(0,0,0,0.5)*/;
 #event #details .value {
 	margin-left: 75px;
 	padding-left: 5px;
+}
+
+#event #details #slider {
+	display:none;
 }
 
 /* About */
