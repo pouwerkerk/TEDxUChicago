@@ -2,11 +2,13 @@
 	http://tedx.com/css/register.css
 	http://tedxuchicago.com/css/application.css?v=1.1
 	http://tedxuchicago.com/css/application.css?v=1.0.1
+	http://tedx.com/css/application.css?v=1.0.1
 */
+
 #page.register {
 	background: url(/images/application-background.jpg) center center;
 	display: block;
-	height: 1200px;
+	height: 950px;
 	color: #fff;
 }
 
@@ -75,7 +77,7 @@
 }
 
 #application h3 {
-	padding: 5px 0 0;
+	padding: 25px 0 0;
 	font-weight: lighter;
 	border-bottom: 1px solid rgba(255,255,255,0.25);
 	margin-bottom: 5px;
@@ -118,7 +120,7 @@
 }
 
 #application p {
-	padding: 10px 0;
+	padding: 15px 0;
 }
 
 #questions ul li {

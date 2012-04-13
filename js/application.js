@@ -35,7 +35,7 @@ function tweetlength(object) {
 }
 
 function replace(email) {
-	var result = '<h2>Thank you for applying to TEDxUChicago.</h2><div class="checkmark"></div><p>You will receive an application submission confirmation from <a href="mailto:info@tedxuchicago.com">info@tedxuchicago.com</a> at <a href="mailto:'+email+'" class="email">'+email+'</a> within a few minutes. To accelerate the application process, please <b>confirm your email address</b> through the confirmation message at your earliest convenience. We process most applications within five (5) days.</p><p>Thank you for your interest in TEDxUChicago.</p>';
+	var result = '<h2>Thank you for registering for TEDxUChicago.</h2><div class="checkmark"></div><p>Please proceed to buy tickets here at your convenience at <a href="http://ubazaar.uchicago.edu/seller/tedxuchicago">http://ubazaar.uchicago.edu</a></p>';
 	$("#application").html(result);
 }
 
