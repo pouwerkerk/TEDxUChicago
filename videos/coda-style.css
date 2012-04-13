@@ -1,0 +1,104 @@
+/* @override 
+	file:///Users/pco/Downloads/Coda%20Slider/Better%20Coda%20Slider_files/coda-slider.css
+	http://tedxuc.com/videos/coda-slider.css
+*/
+body { 
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+ 
+.header {
+	border-bottom: 3px solid #dc0003;
+	padding: 25px;
+}
+
+#logo {
+	background: url(tedxuc.png) no-repeat;
+	padding-top: 50px;
+	overflow: hidden;
+	height: 0;
+}
+
+
+#intro {
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+#slider {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.scroll {
+    height: 400px;
+    width: 600px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+    background: #FFFFFF;
+}
+
+.scrollContainer div.panel {
+    padding: 20px;
+    height: 210px;
+    width: 560px;
+}
+
+ul.navigation {
+    list-style: none;
+    padding: 0;
+    padding-bottom: 9px;
+}
+
+ul.navigation li {
+    display: block;
+    float: left;
+    margin: 10px 0;
+}
+
+ul.navigation a {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.navigation a:hover {
+    background-color: #e4e4e4;
+}
+
+ul.navigation a.selected {
+	color: #fff;
+    background-color: #dc0003;
+}
+
+ul.navigation a:focus {
+    outline: none;
+}
+
+.scrollButtons {
+    position: absolute;
+    top: 300px;
+    width: 16px;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+
+.scrollButtons.left {
+    left: -20px;
+}
+
+.scrollButtons.right {
+    right: -20px;
+}
+
+.hide {
+    display: none;
+}
