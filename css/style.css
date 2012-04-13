@@ -475,13 +475,28 @@ a:hover {
 }
 
 #speaker-nav {
+	display: none;
 	position: relative;
-	top: -40px;
+	top: -45px;
 	right: 10px;
 	float: right;
 	height: 0;
 }
 
+#speaker-nav li {
+	display: inline;
+	float: left;
+}
+
+#speaker-nav a {
+	text-decoration: none;
+	padding: 1px 5px 3px;
+}
+
+#speaker-nav a:hover {
+	background: #F00;
+	color: #FFF;
+}
 /* Event Details */
 
 #map_canvas {

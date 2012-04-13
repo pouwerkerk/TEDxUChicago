@@ -1,3 +1,59 @@
+function resetSpeakers() {
+	$("#speaker-nav").fadeOut(0);
+	$("#speakers .next").removeClass("next", 500);
+	$(".speaker").fadeIn(500);
+}
+function nextSpeaker() {
+	var $current = $("#speakers .next");
+	if ($current.next().length == 1) { 
+		$current.fadeOut(0).removeClass("next");
+		var $next = $current.next();
+		$next.addClass("next").fadeIn(0);
+		if ($next.hasClass("unannounced")) {
+			resetSpeakers();
+		}
+	} else {
+		redge();
+	}
+}
+function prevSpeaker() {
+	var $current = $("#speakers .next");
+	if ($current.prev().length == 1) { 
+		$current.fadeOut(0).removeClass("next");
+		$current.prev().addClass("next").fadeIn(0);
+		var $prev = $current.prev();
+		$prev.addClass("next").fadeIn(0);		
+		if ($("#speakers .next").hasClass("unannounced")) {
+			resetSpeakers();
+		}
+	} else {
+		ledge();
+	}
+}
+function redge() {
+	var $current = $("#speakers .next");
+	var $currentRow = $current.parent();
+	if ($currentRow.next().hasClass("row")) {
+		console.log("37");
+		$current.fadeOut(0).removeClass("next");
+		$currentRow.next().children().first().addClass("next").fadeIn(0);
+	} else {
+		console.log("41");
+		resetSpeakers();
+	}
+}
+function ledge() {
+	var $current = $("#speakers .next");
+	var $currentRow = $current.parent();
+	if ($currentRow.prev().hasClass("row")) {
+		console.log("49");	
+		$current.fadeOut(0).removeClass("next");
+		$currentRow.prev().children().last().addClass("next").fadeIn(0);
+	} else {
+		console.log("53");	
+		resetSpeakers();
+	}
+}
 $(window).load(function() {
 	initialize();
 	$('#map_canvas').appear(function() {
@@ -8,9 +64,9 @@ $(window).load(function() {
 			return;
 		}
 		if ($(this).hasClass("next")) {
-			$(".speaker").fadeIn();
-			$(this).removeClass("next", 500);
+			resetSpeakers();
 		} else {
+			$("#speaker-nav").fadeIn(250);
 			$(".speaker").not(this).hide();
 			$(this).addClass("next", 500);			
 		}
@@ -33,6 +89,15 @@ $(window).load(function() {
             })
             // append list items to ul
             .appendTo($ul);            
+    });
+    $('#speakers #less-than').click(function() {
+		prevSpeaker();
+    });
+    $('#speakers #close').click(function() {
+		resetSpeakers();
+    });    
+    $('#speakers #greater-than').click(function() {
+		nextSpeaker();
     });
     $("#expand").click(function(e) {
     	e.preventDefault();

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.7" />	
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>	
+	<script type="text/javascript" src="/js/modernizr.custom.js"></script>	
 	<script type="text/javascript" src="/js/bootstrap-scrollspy.min.js"></script>
 	<script type="text/javascript" src="/js/script.js"></script>
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCz3bwFJk7RilMe0qxl_HGTW-YFW8pcdfo&sensor=false"></script>
@@ -79,8 +80,8 @@ The navigation menu, And also what happens when scroll up. -->
 	</li>
 	<li class="speaker" id="parviz">
 		<h3>Babak Parviz</h3>
-		<p>Babak Parviz is on the faculty of the University of Washington and is the Associate Director of the University's Micro-scale Life Sciences Center. While doing his postdoctoral research at Harvard University he worked on developing novel nanofabrication technologies, self-assembled systems, low-cost biosensing, and using organics for electronics and MEMS.  Babak is a founding member of the American Academy of Nanomedicine; a senior member of the IEEE and affiliate of many other renowned scientific associations.</p>
-		<p>Babak was selected by the MIT Technology Review Magazine as one of the top 35 innovators in the world under the age of 35 in 2007 and in that same year also selected as a Rising Star Investigator in genomics by the Genome Technology Magazine. He has worked to create a multipurpose contact lens, which could function to aid people with impaired hearing, or even one day display text, translate speech into captions in real time or offer visual cues from a navigation system.</p>
+		<p>Babak Parviz is on the faculty of the University of Washington and is the Associate Director of the University's Micro-scale Life Sciences Center. While at Harvard, he worked on developing nanofabrication technologies, self-assembled systems, low-cost biosensing, and using organics for electronics and MEMS.</p>		
+		<p>Babak is a founding member of the American Academy of Nanomedicine; a senior member of the IEEE and affiliate of many other renowned scientific associations. Babak was selected by the MIT Technology Review Magazine as one of the top 35 innovators in the world under the age of 35 in 2007 and in that same year also selected as a Rising Star Investigator in genomics by the Genome Technology Magazine. He has worked to create a multipurpose contact lens, which could aid people with impaired hearing, or even one day display text, translate speech into captions or offer navigation visual cues.</p>
 	
 	</li>
 	<li class="speaker" id="roe">
@@ -135,10 +136,13 @@ The navigation menu, And also what happens when scroll up. -->
 	</li>
 	<li class="speaker unannounced" id="fifteen"></li>
 </ul>
-	<div class="holder"><div id="speaker-nav">
-		<a href="#" id="less-than">&lt;</a>
-		<a href="#" id="greater-than">&gt;</a>
-	</div></div>
+	<div class="holder">
+		<ul id="speaker-nav">
+		<li><a href="#" id="less-than">&lt;</a></li>
+		<li><a href="#" id="close">&times;</a></li>
+		<li><a href="#" id="greater-than">&gt;</a></li>
+		</ul>
+	</div>
         </div>
         <!-- Begin Event Details -->
         <div class="section row" id="event">
