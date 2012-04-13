@@ -35,7 +35,6 @@ $(window).load(function() {
             .appendTo($ul);            
       });
       
-      
     $('#actions').appear(function() {
     	$("#personalize-wrapper").fadeIn(250);
     	$("#personalize-wrapper").animate({

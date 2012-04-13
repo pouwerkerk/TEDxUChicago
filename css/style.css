@@ -846,12 +846,14 @@ footer .sosumi .unimportant, footer .sosumi .unimportant a {
 	min-width: 438px;
 }
 
+.contact .action button {
+	width: 100pt;
+	display: block;
+	margin: 0 auto;
+}
+
 .contact button {
 	clear: both;
-	margin: 0 auto;
-	height: 20px;
-	width: 100px;
-	display: block;
 }
 
 /* Buttons */
