@@ -1,0 +1,44 @@
+/* @override 
+	http://tedx.com/css/ie.css
+*/
+#menu a {
+	background: #000;
+}
+
+#menu a:hover, #menu .active a {
+	background: #222;
+}
+
+#levy {
+	border: none;
+}
+
+#event #details {
+	background: #333;
+}
+
+#event #details li {
+	font-size: 9pt;
+	line-height: 11pt;
+}
+
+#about p {
+	float: left;
+	position: relative;
+	top: -50px;
+	margin-top: 0;
+}
+
+#about a {
+	height: 180px;
+	display: block;
+	float: left;
+	width: 292px;
+}
+
+#social div {
+	width: 400px;
+	display: block;
+	float: left;
+	padding: 10px 0;
+}

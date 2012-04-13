@@ -1,13 +1,13 @@
-<!-- TODO:
-	- Change team to actual picture of team. -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
 	<title>TEDxUChicago</title>
 <!--	<link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" /> -->
-	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.8" />	
+	<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.8" />
+	<!--[if lte IE 10]>
+		<link rel="stylesheet" type="text/css" href="/css/ie.css" />	
+	<![endif]-->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="/js/jquery.appear-1.1.1.min.js"></script>	
 	<script type="text/javascript" src="/js/modernizr.custom.js"></script>	
@@ -144,7 +144,7 @@ The navigation menu, And also what happens when scroll up. -->
 		</ul>
 	</div>
         </div>
-        <div class="clearfix"></div>
+        <div class="clearfix" />
         <!-- Begin Event Details -->
         <div class="section row" id="event">
 			<div id="map_canvas" style="height:300px;width:100%"></div>
@@ -215,7 +215,7 @@ The navigation menu, And also what happens when scroll up. -->
 			</div>
         </div>
         <!-- Begin About -->
-        <div class="section row" id="about">
+        <div class="section row clearfix" id="about">
             <h2>What is <span class="logo-small">TEDxUChicago</span>?</h2>
             <div><p>TEDxUChicago is a local, independently organized event at The University of Chicago that strives to re-create the unique experience found at TED, where the world´s leaders, thinkers and doers congregate to share what they are most passionate about. At its core, the fundamental goal of TED and The University of Chicago is to foster and spear great ideas. We aim to provide a platform where the smartest thinkers, greatest visionaries, and most fascinating teachers will be inspired and will have the opportunity to inspire others. We hope that at our conference the diverse group of students, faculty, and alumni present will be able to learn from one another, both as speakers and attendees, and will leave the conference driven to creatively improve our collective future.</p>
         </div>
@@ -227,11 +227,11 @@ The navigation menu, And also what happens when scroll up. -->
         </div>	
         <!-- Begin Social Media Links -->
         <div class="section row" id="social">
-          <div id="facebook">
+          <div id="facebook" class="clearfix">
           	<h2>Like <span class="logo-small">TEDxUChicago</span>:</h2>
 			<div class="fb-like" data-href="http://facebook.com/tedxuchicago" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="arial"></div>
 		  </div>
-		  <div id="twitter">
+		  <div id="twitter" class="clearfix">
           	<h2>Follow <span class="logo-small">TEDxUChicago</span>:</h2>
 		  <a href="https://twitter.com/tedxuchicago" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @tedxuchicago</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
