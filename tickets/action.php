@@ -5,8 +5,7 @@ require_once("../email/encryption.php");
 require_once("../email/send.php");
 
 function applyMessage($token, $input) {
-	$content = "<p>Dear ".$input['firstName'].",</p>
-				<p>Thank you, you've successfully created a badge with the following three topics:</p>
+	$content = "<p>Thank you, you've successfully created a badge with the following three topics:</p>
 				<ol>
 					<li>".$input['firstTopic']."</li>
 					<li>".$input['secondTopic']."</li>
@@ -42,7 +41,7 @@ if ($mysqli->query($query) === TRUE) {
 	$result = array("result" => "failure");
 }
 
-$email_content = applyMessage($token);
+$email_content = applyMessage($token, $input);
 
 sendMessage($input['email'], $input['firstName']." ".$input['lastName'], "Tickets to TEDxUChicago 2012", $email_content);
 
