@@ -24,7 +24,7 @@ a:hover {
 
 #home {
 	position: absolute;
-	height:206px;
+	height:160px;
 	width:100%;
 	border-bottom: 18px solid #c31d00;
 	background: url(/images/top-pattern.png) 0;
@@ -117,13 +117,13 @@ a:hover {
 }
 
 #menu a.logo, #menu a.logo:hover {
-    background: url(/images/menu-logo-vertical.png) no-repeat scroll 0 0 #000000;
+    background: url(/images/menu-logo-vertical-stacked.png) no-repeat scroll 0 0 #000000;
     height: 0;
     overflow: hidden;
-    padding-top: 220px;
-    width: 64px;
+    padding-top: 176px;
+    width: 100px;
     position: relative;
-    left: 157px;
+    left: 127px;
 }
 
 /* Header */
@@ -141,10 +141,10 @@ a:hover {
 }
 
 #header a#logo {
-	margin: 51px 0;
+	margin: 37px 0;
 	height:0;
 	overflow: hidden;
-	padding-top: 100px;
+	padding-top: 74px;
 	width: 500px;
 	display: block;
 	float: left;
@@ -152,11 +152,11 @@ a:hover {
 }
 
 #header {
-	height: 202px;
+	height: 160px;
 }
 
 #tickets {
-	margin-top: 75px;
+	margin-top: 55px;
 	float: right;
 	width: 100px;
 }
@@ -471,6 +471,14 @@ a:hover {
 
 #roe.speaker, #roe.speaker p, #erickson.speaker, #erickson.speaker p, #gerber.speaker, #gerber.speaker p {
 	font-size: 100%;
+}
+
+#speaker-nav {
+	display: n;
+	position: relative;
+	top: -40px;
+	right: 10px;
+	float: right;
 }
 
 /* Event Details */
