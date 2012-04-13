@@ -3,6 +3,7 @@
 	http://tedxuchicago.com/css/style.css?v=1.6
 	http://tedx.com/css/style.css?v=1.7
 	http://tedx.com/css/style.css
+	http://tedx.com/css/style.css?v=1.8
 */
 * {
 	padding: 0;
@@ -549,8 +550,9 @@ a:hover {
 	background: rgba(0,0,0,0.87);
 }
 #event #details {
-	min-height: 279px;
+	height: 279px;
 	width: 280px;
+	top: -300px;
 }
 
 #event #details ul {
@@ -1178,6 +1180,7 @@ button.btn.small,input[type="submit"].btn.small {
 	bottom: 10%;
 	right: 75px;
 	width: 350px;
+	border: 1px solid #999;
 	background: #FFF;
 	padding: 5px;
 	color: #333;
