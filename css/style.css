@@ -2,6 +2,7 @@
 	http://tedx.com/css/style.css?v=1.5
 	http://tedxuchicago.com/css/style.css?v=1.6
 	http://tedx.com/css/style.css?v=1.7
+	http://tedx.com/css/style.css
 */
 * {
 	padding: 0;
@@ -65,7 +66,7 @@ a:hover {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-#wrapper h2 {
+#wrapper h2, .videos h1 {
 	font-weight: lighter;
 	padding-bottom: 5px;
 }
@@ -78,7 +79,7 @@ a:hover {
 
 #menu-wrapper {
 	position: absolute;
-	left: -225px;
+	left: -170px;
 	top: 4px;
 	z-index: -20;
 }
@@ -87,7 +88,7 @@ a:hover {
 	position:fixed;
 	text-align:right;
 	color:white;
-	font-size:20px;
+	font-size:12pt;
 	z-index: -1;
 }
 
@@ -101,10 +102,10 @@ a:hover {
 	font-weight: lighter;
 	text-decoration: none;
 	color: #fff;
-	width: 210px;
+	width: 150px;
 	margin-bottom:4px;
-	height:44px;
-	padding-top:20px;
+	height:30px;
+	padding-top:10px;
 	padding-right:50px;		
 }
 
@@ -123,7 +124,7 @@ a:hover {
     padding-top: 176px;
     width: 100px;
     position: relative;
-    left: 127px;
+    left: 75px;
 }
 
 /* Header */
@@ -506,6 +507,11 @@ a:hover {
 	padding: 0;
 }
 
+#page.videos {
+	padding: 30px;
+	height: 625px;
+}
+
 #event #holder {
 	height: 0;
 }
@@ -602,6 +608,7 @@ a:hover {
 
 #about a:hover {
 	text-shadow: 0px 2px 1px rgba(0,0,0,0.75);
+	opacity: 0.80;
 }
 
 #about a:last-child {
@@ -684,7 +691,7 @@ footer .sosumi .unimportant, footer .sosumi .unimportant a {
 	padding: 25px 0;
 }
 
-.bios h2, .contact h2, .application h2 {
+.bios h2, .contact h2, .application h2, .team h2, .videos h1 {
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 17px;
 }
@@ -830,6 +837,8 @@ footer .sosumi .unimportant, footer .sosumi .unimportant a {
 .contact textarea {
 	height: 175px;
 	width: 438px;
+	max-width: 438px;
+	min-width: 438px;
 }
 
 .contact button {
