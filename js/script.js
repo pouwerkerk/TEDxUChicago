@@ -33,8 +33,12 @@ $(window).load(function() {
             })
             // append list items to ul
             .appendTo($ul);            
-      });
-      
+    });
+    $("#expand").click(function(e) {
+    	e.preventDefault();
+    	$(this).fadeOut("slow");
+        $("#additional-details").slideDown("slow");
+    });
     $('#actions').appear(function() {
     	$("#personalize-wrapper").fadeIn(250);
     	$("#personalize-wrapper").animate({

@@ -145,7 +145,7 @@ a:hover {
 	margin: 37px 0;
 	height:0;
 	overflow: hidden;
-	padding-top: 74px;
+	padding-top: 76px;
 	width: 500px;
 	display: block;
 	float: left;
@@ -475,11 +475,11 @@ a:hover {
 }
 
 #speaker-nav {
-	display: n;
 	position: relative;
 	top: -40px;
 	right: 10px;
 	float: right;
+	height: 0;
 }
 
 /* Event Details */
@@ -512,7 +512,7 @@ a:hover {
 	height: 625px;
 }
 
-#event #holder {
+#event .holder {
 	height: 0;
 }
 
@@ -522,18 +522,20 @@ a:hover {
 	margin-bottom: 5px;
 }
 
-#event #details {
+#event #details, #additional-details {
 	color: #fff;
 	padding: 18px 18px 3px;
 	position: relative;
 	z-index: 1;
-	width: 300px;
 	top: 0;
-	height: 280px;
 	border-radius: 0;
 	left: 0;
 	line-height: 16pt;
 	background: rgba(0,0,0,0.87);
+}
+#event #details {
+	min-height: 279px;
+	width: 280px;
 }
 
 #event #details ul {
@@ -554,8 +556,49 @@ a:hover {
 	padding-left: 5px;
 }
 
-#event #details #slider {
+#expand {
+	width: 112pt;
+	margin: 15px auto;
+}
+
+#additional-details {
 	display:none;
+	font-size: 10pt;
+	padding: 18px;
+}
+
+#col-left, #col-right {
+	display: table-cell;
+	width: 33%;
+}
+
+#col-left {
+	padding-right: 3%;	
+}
+
+#additional-details li {
+	list-style: none;
+}
+
+#additional-details li ul li {
+	list-style-type: square;
+}
+
+#additional-details li li {
+	padding-left: 10px;
+	list-style-position: inside;
+}
+
+#additional-details h2 {
+	border-bottom: 1px solid #333;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+}
+#event h5{
+	font-size: 10pt;
+	list-style: none;
+	margin-top: 5px;
+	border-bottom: 1px dotted #333;
 }
 
 /* About */
@@ -1114,6 +1157,7 @@ button.btn.small,input[type="submit"].btn.small {
 
 /* Personalize */
 #personalize-wrapper {
+	z-index: 7;
 	display: none;
 	position: fixed;
 	bottom: 10%;
