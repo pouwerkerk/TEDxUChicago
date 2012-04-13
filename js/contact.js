@@ -4,7 +4,8 @@ $(window).load(function() {
 	$(".validator").hide();
 	event.preventDefault();
 	if(validate() != 1) {
-		$(this).attr("disabled", "disabled");
+		$("#submit").attr("disabled", "disabled");
+		$("form").css({ opacity: 0.5 });
 		$(".loader").show();
 		/* Get some values from elements on the page: */
    
@@ -18,10 +19,8 @@ $(window).load(function() {
 			type: "POST",
 			success: function(data) {
 				if(data.result == "success") {
-					replace(data.email);
-					$("#badge").fadeOut();
-					$('#page.register').css("height","450px");
-					$('footer').css('top','0');
+					$("form").empty();
+					$("#confirm").fadeIn(250);
 					$('#submit').hide();					
 				}
 	    }});
