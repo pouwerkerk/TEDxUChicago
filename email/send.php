@@ -59,10 +59,9 @@ function sendContact($email_address, $email_name, $email_subject, $email_content
 		
 		$mail->Username = "info@tedxuchicago.com"; // SMTP account username
 		$mail->Password = "tedxuchicago2012";				// SMTP account password
-		$mail->AddReplyTo('info@tedxuchicago.com', 'TEDxUChicago');
 		$mail->AddAddress('info@tedxuchicago.com', 'TEDxUChicago');
 		$mail->AddAddress($email_address, $email_name);
-		$mail->SetFrom($email_address, $email_name);
+		$mail->SetFrom('info@tedxuchicago.com', $email_name);
 		$mail->AddReplyTo($email_address, $email_name);
 		if($bccE) {
 			$mail->AddBCC($bccE, $bccN);
