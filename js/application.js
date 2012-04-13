@@ -35,7 +35,7 @@ function tweetlength(object) {
 }
 
 function replace(email) {
-	var result = '<h2>Thank you for registering for TEDxUChicago.</h2><div class="checkmark"></div><p>Please proceed to buy tickets here at your convenience at <a href="http://ubazaar.uchicago.edu/seller/tedxuchicago">http://ubazaar.uchicago.edu</a></p>';
+	var result = '<h2>Thank you for registering for TEDxUChicago.</h2><div class="checkmark"></div><p>Please proceed to buy tickets here at your convenience at <a href="http://ubazaar.uchicago.edu/seller/tedxuchicago">http://ubazaar.uchicago.edu</a>&gt;</p>';
 	$("#application").html(result);
 }
 

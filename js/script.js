@@ -34,6 +34,14 @@ $(window).load(function() {
             // append list items to ul
             .appendTo($ul);            
       });
+      
+      
+    $('#actions').appear(function() {
+    	$("#personalize-wrapper").fadeIn(250);
+    	$("#personalize-wrapper").animate({
+    		right: "-=50"
+		}, 250 );  
+	});  
 });
   
   var map;

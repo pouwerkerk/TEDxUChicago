@@ -209,9 +209,10 @@ The navigation menu, And also what happens when scroll up. -->
         </div>
         <!-- Begin Footer -->
     </div>
-    <div id=”personalize-wrapper”>
-		<div id=”personalize”>
-			<a href="/tickets" id="tickets" class="btn btn-large btn-success">Get Tickets &gt;</a>
+    <div id="personalize-wrapper">
+		<div id="personalize">
+			<span id="attend">Attend</span><span class="logo-small">TEDxUChicago</span>
+			<a href="/tickets" class="btn btn-large btn-success">Get Tickets &gt;</a>
 		</div>
 	</div>
 
@@ -237,13 +238,4 @@ The navigation menu, And also what happens when scroll up. -->
 
 </div>
 </body>
-
-<script type="text/javascript">
-$('#personalize-wrapper').appear(function() {
-	$("#personalize").animate({
-    	marginLeft: "15px"
-	}, 250 );  
-});
-</script>
-
 </html>
