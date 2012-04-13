@@ -229,6 +229,37 @@ a:hover {
 	position: relative;
 }
 
+#wrapper #hero.hero-raghu h3 {
+	text-align:left;
+	padding-left:25px;
+	font-size: 18pt;
+	padding-top: 75px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#wrapper #hero.hero-raghu h2 {
+	text-align:right;
+	padding-left:25px;
+	font-size: 18pt;
+	padding-top: 75px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#wrapper #hero h4 {
+	color:#ff2b06;
+	text-align:left;
+	padding-left:25px;
+	font-size: 40pt;
+	padding-top: 50px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	position: relative;
+}
+
 /* Speakers */
 
 #page #speakers {
