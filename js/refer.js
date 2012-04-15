@@ -22,6 +22,7 @@ $(document).ready(function() {
     e.preventDefault();
     if ($("#name").val() == "" || $("#email").val() == "") {
 			alert("One or more fields is empty! Please completely fill out the form.");
+			return;
 	  }
     $(this).attr("disabled");
     $.ajax({

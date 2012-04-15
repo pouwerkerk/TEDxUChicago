@@ -33,7 +33,9 @@ function codeRetrieve() {
 	$email = $mysqli->real_escape_string($_REQUEST['email']);
 	$name = $mysqli->real_escape_string($_REQUEST['name']);
 	
-	$query = "SELECT * FROM `referral` WHERE `email` = \"".$email."\" LIMIT 1;";
+	$query = "SELECT * FROM `referral` WHERE `email` = '".$email."' LIMIT 1;";
+	// DEBUGGING ONLY
+	$output['query'] = $query;
 	$result = $mysqli->query($query);
 
 	if ($result->num_rows) {
