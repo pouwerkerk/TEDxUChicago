@@ -32,10 +32,8 @@ if ($mysqli->connect_errno) {
 }
 
 $email = $mysqli->real_escape_string($_REQUEST['email']);	
-$query = "SELECT * FROM `referral` WHERE `email` = ".$email." LIMIT 1;";
+$query = "SELECT * FROM `referral` WHERE `email` = \"".$email."\" LIMIT 1;";
 $result = $mysqli->query($query);
-
-echo $result->num_rows;
 
 if ($result->num_rows) {
 	$row = $result->fetch_assoc();
