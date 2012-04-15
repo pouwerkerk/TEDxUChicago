@@ -59,7 +59,8 @@ $(window).load(function() {
 	$('#map_canvas').appear(function() {
 		dropPin();
 	});
-	$(".speaker").click(function() {
+	$(".speaker").click(function(e) {
+		e.preventDefault();
 		if ($(this).hasClass("unannounced")) {
 			return;
 		}
@@ -90,14 +91,17 @@ $(window).load(function() {
             // append list items to ul
             .appendTo($ul);            
     });
-    $('#speakers #less-than').click(function() {
-		prevSpeaker();
+    $('#speakers #less-than').click(function(e) {
+	e.preventDefault();
+	prevSpeaker();
     });
-    $('#speakers #close').click(function() {
-		resetSpeakers();
+    $('#speakers #close').click(function(e) {
+	e.preventDefault();
+	resetSpeakers();
     });    
-    $('#speakers #greater-than').click(function() {
-		nextSpeaker();
+    $('#speakers #greater-than').click(function(e) {
+	e.preventDefault()
+	nextSpeaker();
     });
     $("#expand").click(function(e) {
     	e.preventDefault();
