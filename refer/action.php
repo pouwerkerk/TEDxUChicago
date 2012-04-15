@@ -42,17 +42,21 @@ if ($result->num_rows) {
 	$code = generateCode(5);
 	$email_content = codeMessage($code);
 	sendMessage($row['email'], $row['first']." ".$row['last'], "Your Invititation to TEDxUChicago 2012", $email_content);
-	$name = $mysqli->real_escape_string($_REQUEST['name']);
-	$email = $mysqli->real_escape_string($_REQUEST['email']);	
-	
-	$query = "INSERT INTO `referral` (`name`, `email`, `code`) VALUES ('".$name."', '".$email."', '".$code."');";
-	if ($mysqli->query($query)) {
-		$output['result'] = 'success';
-		$output['code'] = $row['code'];	
-	}
-	else {
+	if ((isset($_REQUEST['name']) && $_REQUEST['name'] != "") && (isset($_REQUEST['email']) && $_REQUEST['email'] != "")) {
+		$name = $mysqli->real_escape_string($_REQUEST['name']);
+		$email = $mysqli->real_escape_string($_REQUEST['email']);	
+		$query = "INSERT INTO `referral` (`name`, `email`, `code`) VALUES ('".$name."', '".$email."', '".$code."');";
+		if ($mysqli->query($query)) {
+			$output['result'] = 'success';
+			$output['code'] = $code;	
+		}
+		else {
+			$output['result'] = 'failure';
+			$output['error'] = "Unable to insert/update database";
+		}
+	} else {
 		$output['result'] = 'failure';
-		$output['error'] = "Unable to insert/update database";
+		$output['error'] = "Incomplete form";
 	}
 }
 
