@@ -22,6 +22,7 @@ $(document).ready(function() {
     e.preventDefault();
     $(this).attr("disabled");
     $.ajax({
+      type: 'POST',
       url: "action.php",
       dataType: 'json',
       data: $("#codeRetrieve").serialize(),
