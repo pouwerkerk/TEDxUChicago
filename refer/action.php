@@ -4,19 +4,17 @@ require_once("../email/code.php");
 require_once("../email/encryption.php");
 require_once("../email/send.php");
 
-function acceptMessage($token) {
+// INSERT INTO `tedxuchi_refer`.`referral` (`id`, `timestamp`, `name`, `email`, `code`) VALUES (NULL, CURRENT_TIMESTAMP, 'Pieter', 'pco@uchicago.edu', '1234');
 
-	$content = "<h2>CONGRATULATIONS!</h2>
-<p>We are excited to inform you that you have been accepted to join our TEDx event. Buy your ticket as soon as possible to ensure that you do not miss out on the opportunity to attend TEDxUChicago 2012: Revolutions!</p>
+// If email exists in database, just give the code.
+// If email doesn't exist, add code, name and email to database and send message.
 
-<div style=\"padding:5px; border:1px solid #333;\">
-	<h3><a href=\"http://ubazaar.uchicago.edu/seller/tedxuchicago/?token=".$token."\">Please click here to purchase your ticket</a>.</h3>
-	<p>Please note that tickets can only be purchased through this link.</p>
+function codeMessage($code) {
+
+	$content = "<p>Thanks for spreading the word about TEDxUChicago! You can send people directly to uBazaar through this link: <a href=\"http://ubazaar.uchicago.edu/seller/tedxuchicago/?ref=".$code."\">http://ubazaar.uchicago.edu/seller/tedxuchicago/?ref=".$code."</a>.</p>
+	<p>Make sure to send this link so you get credit for each person you refer!</p>
 </div>
-
-<p>We look forward to having you join us on April 29th.</p>
-<p>
-	Sincerely,<br/>
+<p>Thanks again for your support!<br/>
 	The TEDxUChicago Team
 </p>";
 
@@ -24,39 +22,43 @@ function acceptMessage($token) {
 	return $content;
 }
 
-function accept() {
+function codeRetrieve() {
 
 $output = array("result" => "failure");
 
-$mysqli = new mysqli('localhost', 'tedxuchi_apply', '33GT9j9YaTUj8?B)d4hw', 'tedxuchi_apply'); 
+$mysqli = new mysqli('localhost', 'tedxuchi_refer', '*pg4zd4je6ATDh69+d2r', 'tedxuchi_refer'); 
 if ($mysqli->connect_errno) {
- 	return $output;
+ 	return "Error: Unable to connect to database.";
 }
 
-$query = "SELECT * FROM `application` WHERE `id` = ".$_REQUEST['id']." LIMIT 1;";
+$query = "SELECT * FROM `referral` WHERE `email` = ".$_REQUEST['email']." LIMIT 1;";
+$result = $mysqli->query($query);
 
-if ($result = $mysqli->query($query)) {
+if ($result->num_rows) {
 	$row = $result->fetch_assoc();
-	if ($row['status'] == 4) {
-		$email_content = acceptMessage($row['ubazaar']);
-		sendMessage($row['email'], $row['first']." ".$row['last'], "Your Invititation to TEDxUChicago 2012", $email_content);
-	} else {
-		return $output;
+	$output['result'] = 'success';
+	$output['code'] = $row['code'];
+} else {
+	$code = generateCode(5);
+	$email_content = codeMessage($code);
+	sendMessage($row['email'], $row['first']." ".$row['last'], "Your Invititation to TEDxUChicago 2012", $email_content);
+	$name = $mysqli->real_escape_string($_REQUEST['name']);
+	$email = $mysqli->real_escape_string($_REQUEST['email']);	
+	
+	$query = "INSERT INTO `referral` (`name`, `email`, `code`) VALUES ('".$name."', '".$email."', '".$code."');";
+	if ($mysqli->query($query)) {
+		$output['result'] = 'success';
+		$output['code'] = $row['code'];	
 	}
-} else {
-	return $output;
-}
-
-$query = "UPDATE `application` SET `status` = 5 WHERE  `id` = ".$_REQUEST['id']." LIMIT 1;";
-if ($mysqli->query($query)) {
-	$output = array("status" => "success", "id" => $_REQUEST['id']);
-} else {
-	return $output;
+	else {
+		$output['result'] = 'failure';
+		$output['error'] = "Unable to insert/update database";
+	}
 }
 
 return json_encode($output);
 }
 
-echo accept();
+echo codeRetrieve();
 
 ?>

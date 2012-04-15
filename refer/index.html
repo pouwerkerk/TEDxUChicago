@@ -10,16 +10,18 @@
   <link rel="stylesheet" href="/css/refer.css">
 </head>
 <body>
-  <header id="header">
-    <h1><a id="logo">TEDxUChicago</a>&mdash; Refer</h1>
-  </header>
-  <div role="main">
-    <form method="POST" action="action.php">
-      <div class="name"><label for="name">Name</label><input type="text" id="name" autofocus name="name" /></div>
-      <div class="email"><label for="email">Email</label><input type="text" id="email" name="email" /></div>
-      <div class="link"><label for="link">Link</label><input type="text" id="link" name="link" /></div>
-      <input class="btn btn-large btn-success" type="submit" />
-    </form>
+  <div id="container">
+    <header>
+      <h1><a class="logo-small">TEDxUChicago</a>&mdash; Refer</h1>
+    </header>
+    <div id="main" role="main">
+      <form method="POST" action="action.php">
+        <div class="name"><label for="name">Name</label><input placeholder="First Last" type="text" id="name" autofocus name="name" /></div>
+        <div class="email"><label for="email">Email</label><input placeholder="example@uchicago.edu" type="text" id="email" name="email" /></div>
+        <div class="url"><label for="url">Link</label><input type="text" id="url" name="url" /></div>
+        <div class="submit"><input value="Submit" class="btn btn-large btn-success" type="submit" /></div>
+      </form>
+    </div>
   </div>
   <footer>
     <ul class="sosumi">

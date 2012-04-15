@@ -1,8 +1,49 @@
-.main {
- max-width: 500px; _width: 500px; padding: 30px 20px 50px; border: 1px solid #b3b3b3; border-radius: 4px; margin: 0 auto; box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff; background: #fcfcfc; }
-    h1 { margin: 0 10px; font-size: 50px; text-align: center;
+/* @override http://tedx.com/css/refer.css */
+
+
+.url {
+	display: none;
 }
 
-.link {
-	display: none;
+    html { padding: 30px 10px; font-size: 20px; line-height: 1.4; color: #737373; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    html, input { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+        #container { max-width: 500px; _width: 500px; padding: 30px 20px; border: 1px solid #b3b3b3; border-radius: 4px; margin: 0 auto; box-shadow: 0 1px 10px rgba(0,0,0,0.75), inset 0 1px 0 #fff; background: #fcfcfc; }
+    h1 {
+	font-size: 22px;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	border-bottom: 1px dotted #dadada;
+}
+    h1 span { color: #bbb; }
+    h3 { margin: 1.5em 0 0.5em; }
+    p { margin: 1em 0; }
+    .container { max-width: 380px; _width: 380px; margin: 0 auto; }
+ .submit {
+	width: 100px;
+	margin: 25px auto 0;
+}
+ 	input#name, input#email, input#url {
+	    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #555555;
+    display: inline-block;
+    height: 18px;
+    margin-bottom: 9px;
+	clear: both;
+	height: 33px;
+	background: #fff;
+	width: 98%;
+	padding: 2% 1% 1%;
+	font-size: 16pt;
+	  line-height: 18px;
+}
+    input:hover, input:focus { border-color: #aaa; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); background-color: #f8f8f8; }
+    input:focus, input:focus { border-color: #105cb6; outline: 1; color: #222; }
+    input::-moz-focus-inner { padding: 0; border: 0; }
+    
+footer .sosumi {
+	border: none;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
 }
