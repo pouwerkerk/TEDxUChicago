@@ -5,10 +5,12 @@ function center(id, constant) {
 
 function showResult(data) {
   if (data.result == "success") {
-	$(".name").fadeOut(250);
-	$(".email").fadeOut(250);
-	$(".url").fadeIn(250);
+	$(".name").hide();
+	$(".email").hide();
+	$(".submit").hide();
+	$(".url").slideDown(250);
 	$("#url").val("http://ubazaar.uchicago.edu/seller/tedxuchicago/?ref=" + data.code);
+	$("#url").focus().select();
   } else {
   	$("form").replaceWith("Error: " + data.error);
   }
