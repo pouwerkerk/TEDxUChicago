@@ -31,8 +31,11 @@ if ($mysqli->connect_errno) {
  	return "Error: Unable to connect to database.";
 }
 
-$query = "SELECT * FROM `referral` WHERE `email` = ".$_REQUEST['email']." LIMIT 1;";
+$email = $mysqli->real_escape_string($_REQUEST['email']);	
+$query = "SELECT * FROM `referral` WHERE `email` = ".$email." LIMIT 1;";
 $result = $mysqli->query($query);
+
+echo $result->num_rows;
 
 if ($result->num_rows) {
 	$row = $result->fetch_assoc();
@@ -44,7 +47,6 @@ if ($result->num_rows) {
 	sendMessage($row['email'], $row['first']." ".$row['last'], "Your Invititation to TEDxUChicago 2012", $email_content);
 	if ((isset($_REQUEST['name']) && $_REQUEST['name'] != "") && (isset($_REQUEST['email']) && $_REQUEST['email'] != "")) {
 		$name = $mysqli->real_escape_string($_REQUEST['name']);
-		$email = $mysqli->real_escape_string($_REQUEST['email']);	
 		$query = "INSERT INTO `referral` (`name`, `email`, `code`) VALUES ('".$name."', '".$email."', '".$code."');";
 		if ($mysqli->query($query)) {
 			$output['result'] = 'success';
