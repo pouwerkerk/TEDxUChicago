@@ -18,6 +18,9 @@ function showResult(data) {
 
 $(document).ready(function() {
   center("#container", 150);
+  if ($("#name").val() == "" || $("#email").val() == "") {
+  	alert("One or more fields is empty! Please completely fill out the form.");
+  }
   $("#submit").click(function(e) {
     e.preventDefault();
     $(this).attr("disabled");

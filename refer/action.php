@@ -42,9 +42,9 @@ function codeRetrieve() {
 		$output['code'] = $row['code'];
 	} else {
 		$code = generateCode(5);
-		$email_content = codeMessage($code);
-		sendMessage($email, $name, "TEDxUChicago - Referral Link", $email_content);
 		if ((isset($_REQUEST['name']) && $_REQUEST['name'] != "") && (isset($_REQUEST['email']) && $_REQUEST['email'] != "")) {
+			$email_content = codeMessage($code);
+			sendMessage($email, $name, "TEDxUChicago - Referral Link", $email_content);
 			$query = "INSERT INTO `referral` (`name`, `email`, `code`) VALUES ('".$name."', '".$email."', '".$code."');";
 			if ($mysqli->query($query)) {
 				$output['result'] = 'success';
