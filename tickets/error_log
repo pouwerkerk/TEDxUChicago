@@ -1,0 +1,1 @@
+[12-Apr-2012 21:41:10] PHP Warning:  Missing argument 2 for applyMessage(), called in /home6/tedxuchi/public_html/tickets/action.php on line 45 and defined in /home6/tedxuchi/public_html/tickets/action.php on line 7
