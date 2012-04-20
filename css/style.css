@@ -378,8 +378,8 @@ a:hover {
 	background-image: url(/images/speakers/thumbnails/erickson.jpg);
 }
 
-#mankowsky {
-	background-image: url(/images/speakers/thumbnails/mankowsky.jpg);
+#gillam {
+	background-image: url(/images/speakers/thumbnails/gillam.jpg);
 }
 
 #teevan {
@@ -435,8 +435,8 @@ a:hover {
 	background-image: url(/images/speakers/erickson.jpg);
 }
 
-#mankowsky.next {
-	background-image: url(/images/speakers/mankowsky.jpg);
+#gillam.next {
+	background-image: url(/images/speakers/gillam.jpg);
 }
 
 #teevan.next {
