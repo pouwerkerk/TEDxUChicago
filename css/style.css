@@ -382,6 +382,10 @@ a:hover {
 	background-image: url(/images/speakers/thumbnails/gilliam.jpg);
 }
 
+#keller {
+	background-image: url(/images/speakers/thumbnails/keller.jpg);
+}
+
 #teevan {
 	background-image: url(/images/speakers/thumbnails/teevan.jpg);
 }
@@ -437,6 +441,10 @@ a:hover {
 
 #gilliam.next {
 	background-image: url(/images/speakers/gilliam.jpg);
+}
+
+#keller.next {
+	background-image: url(/images/speakers/keller.jpg);
 }
 
 #teevan.next {
