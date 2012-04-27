@@ -4,6 +4,7 @@
 	http://tedx.com/css/style.css?v=1.7
 	http://tedx.com/css/style.css
 	http://tedx.com/css/style.css?v=1.8
+	http://tedxuchicago.com/css/style.css?v=1.9
 */
 * {
 	padding: 0;
@@ -67,7 +68,7 @@ a:hover {
 	border-bottom: 1px solid #e5e5e5;
 }
 
-#wrapper h2, .videos h1 {
+#wrapper h2, .videos h1, #dates h2 {
 	font-weight: lighter;
 	padding-bottom: 5px;
 }
@@ -128,6 +129,23 @@ a:hover {
     left: 75px;
 }
 
+/* Dates */
+
+#dates {
+	color: #fff;
+	background: #333;
+	height: 250px;
+}
+
+#dates ul {
+	padding: 10px 20px;
+}
+
+#dates div {
+	width: 50%;
+	float: left;
+}
+
 /* Header */
 
 #wrapper #header {
@@ -170,9 +188,9 @@ a:hover {
 /* Hero */
 
 #wrapper #hero {
-	color: #fff;
-	height: 300px;
-	text-align: left;
+	height: 310px;
+	margin-top: 10px;
+	text-align: center;
 }
 
 #hero.degray {
@@ -214,6 +232,13 @@ a:hover {
 	font-style: normal;
 }
 
+#hero.revolutions {
+	background:  center url(/images/lastdays.png);
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 #wrapper #hero h2, #wrapper #hero h3 {
 	border: none;
 	font-weight: lighter;
@@ -224,13 +249,12 @@ a:hover {
 }
 
 #wrapper #hero h2 {
+	font-weight: bold;
 	padding-top: 75pt;
 }
 
 #wrapper #hero h3 {
 	font-size: 18pt;
-	padding-top: 110px;
-	font-weight: bold;
 	padding-bottom: 10px;
 	position: relative;
 }
@@ -546,7 +570,7 @@ a:hover {
 	margin-bottom: 5px;
 }
 
-#event #details, #additional-details {
+#event #details, #additional-details, #dates {
 	color: #fff;
 	padding: 18px 18px 3px;
 	position: relative;
@@ -558,9 +582,9 @@ a:hover {
 	background: rgba(0,0,0,0.87);
 }
 #event #details {
-	height: 279px;
+	height: 280px;
 	width: 280px;
-	top: -300px;
+	top: -301px;
 }
 
 #event #details ul {
@@ -614,7 +638,7 @@ a:hover {
 	list-style-position: inside;
 }
 
-#additional-details h2 {
+#additional-details h2, #dates h2 {
 	border-bottom: 1px solid #333;
 	padding-bottom: 10px;
 	margin-bottom: 5px;
