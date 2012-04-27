@@ -1,78 +1,78 @@
 function resetSpeakers() {
-	$("#speaker-nav").fadeOut(0);
-	$("#speakers .next").removeClass("next", 500);
-	$(".speaker").fadeIn(500);
+  $("#speaker-nav").fadeOut(0);
+  $("#speakers .next").removeClass("next", 500);
+  $(".speaker").fadeIn(500);
 }
 function nextSpeaker() {
-	var $current = $("#speakers .next");
-	if ($current.next().length == 1) { 
-		$current.fadeOut(0).removeClass("next");
-		var $next = $current.next();
-		$next.addClass("next").fadeIn(0);
-		if ($next.hasClass("unannounced")) {
-			resetSpeakers();
-		}
-	} else {
-		redge();
-	}
+  var $current = $("#speakers .next");
+  if ($current.next().length == 1) { 
+    $current.fadeOut(0).removeClass("next");
+    var $next = $current.next();
+    $next.addClass("next").fadeIn(0);
+    if ($next.hasClass("unannounced")) {
+      resetSpeakers();
+    }
+  } else {
+    redge();
+  }
 }
 function prevSpeaker() {
-	var $current = $("#speakers .next");
-	if ($current.prev().length == 1) { 
-		$current.fadeOut(0).removeClass("next");
-		$current.prev().addClass("next").fadeIn(0);
-		var $prev = $current.prev();
-		$prev.addClass("next").fadeIn(0);		
-		if ($("#speakers .next").hasClass("unannounced")) {
-			resetSpeakers();
-		}
-	} else {
-		ledge();
-	}
+  var $current = $("#speakers .next");
+  if ($current.prev().length == 1) { 
+    $current.fadeOut(0).removeClass("next");
+    $current.prev().addClass("next").fadeIn(0);
+    var $prev = $current.prev();
+    $prev.addClass("next").fadeIn(0);    
+    if ($("#speakers .next").hasClass("unannounced")) {
+      resetSpeakers();
+    }
+  } else {
+    ledge();
+  }
 }
 function redge() {
-	var $current = $("#speakers .next");
-	var $currentRow = $current.parent();
-	if ($currentRow.next().hasClass("row")) {
-		console.log("37");
-		$current.fadeOut(0).removeClass("next");
-		$currentRow.next().children().first().addClass("next").fadeIn(0);
-	} else {
-		console.log("41");
-		resetSpeakers();
-	}
+  var $current = $("#speakers .next");
+  var $currentRow = $current.parent();
+  if ($currentRow.next().hasClass("row")) {
+    console.log("37");
+    $current.fadeOut(0).removeClass("next");
+    $currentRow.next().children().first().addClass("next").fadeIn(0);
+  } else {
+    console.log("41");
+    resetSpeakers();
+  }
 }
 function ledge() {
-	var $current = $("#speakers .next");
-	var $currentRow = $current.parent();
-	if ($currentRow.prev().hasClass("row")) {
-		console.log("49");	
-		$current.fadeOut(0).removeClass("next");
-		$currentRow.prev().children().last().addClass("next").fadeIn(0);
-	} else {
-		console.log("53");	
-		resetSpeakers();
-	}
+  var $current = $("#speakers .next");
+  var $currentRow = $current.parent();
+  if ($currentRow.prev().hasClass("row")) {
+    console.log("49");  
+    $current.fadeOut(0).removeClass("next");
+    $currentRow.prev().children().last().addClass("next").fadeIn(0);
+  } else {
+    console.log("53");  
+    resetSpeakers();
+  }
 }
 $(window).load(function() {
-	initialize();
-	$('#map_canvas').appear(function() {
-		dropPin();
-	});
-	$(".speaker").click(function(e) {
-		e.preventDefault();
-		if ($(this).hasClass("unannounced")) {
-			return;
-		}
-		if ($(this).hasClass("next")) {
-			resetSpeakers();
-		} else {
-			$("#speaker-nav").fadeIn(250);
-			$(".speaker").not(this).hide();
-			$(this).addClass("next", 500);			
-		}
-	});
-	$('.speakers ul').each(function(){
+  initialize();
+  $('#map_canvas').appear(function() {
+    dropPin();
+  });
+  $(".speaker").click(function(e) {
+    e.preventDefault();
+    if ($(this).hasClass("unannounced")) {
+      return;
+    }
+    if ($(this).hasClass("next")) {
+      resetSpeakers();
+    } else {
+      $("#speaker-nav").fadeIn(250);
+      $(".speaker").not(this).hide();
+      $(this).addClass("next", 500);      
+    }
+  });
+  $('.speakers ul').each(function(){
             // get current ul
             var $ul = $(this);
             // get array of list items in current ul
@@ -92,28 +92,28 @@ $(window).load(function() {
             .appendTo($ul);            
     });
     $('#speakers #less-than').click(function(e) {
-	e.preventDefault();
-	prevSpeaker();
+      e.preventDefault();
+      prevSpeaker();
     });
     $('#speakers #close').click(function(e) {
-	e.preventDefault();
-	resetSpeakers();
+      e.preventDefault();
+      resetSpeakers();
     });    
     $('#speakers #greater-than').click(function(e) {
-	e.preventDefault()
-	nextSpeaker();
+      e.preventDefault();
+      nextSpeaker();
     });
     $("#expand").click(function(e) {
-    	e.preventDefault();
-    	$(this).fadeOut("slow");
+      e.preventDefault();
+      $(this).fadeOut("slow");
         $("#additional-details").slideDown("slow");
     });
     $('#actions').appear(function() {
-    	$("#personalize-wrapper").fadeIn(250);
-    	$("#personalize-wrapper").animate({
-    		right: "-=50"
-		}, 250 );  
-	});  
+      $("#personalize-wrapper").fadeIn(250);
+      $("#personalize-wrapper").animate({
+        right: "-=50"
+    }, 250 );  
+  });  
 });
   
   var map;
@@ -127,9 +127,9 @@ $(window).load(function() {
       zoom: 12,
       center: origin,
       scrollwheel: false,
-	  disableDefaultUI: true,      
+    disableDefaultUI: true,      
       mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
+    };
     map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
 
   }
@@ -139,23 +139,23 @@ $(window).load(function() {
     intercon = new google.maps.Marker({
       map:map,
       animation: google.maps.Animation.DROP,
-      position: latlng
+      position: ica
     });
     var qca = new google.maps.LatLng(  41.7914183, -87.597661);
     quadclub = new google.maps.Marker({
       map:map,
       animation: google.maps.Animation.DROP,
-      position: latlng
+      position: qca
     });
 
   
     var mandella = new google.maps.LatLng(41.7910762, -87.5983111);
     mandell = new google.maps.Marker({
-	  map:map,
+    map:map,
       animation: google.maps.Animation.DROP,
-      position: latlng
+      position: mandella
     });
-	var contentString = '<div class="infoWindow">'+
+  var contentString = '<div class="infoWindow">'+
     '<img src="/images/logo-black-small.png" alt="TEDxUChicago" title="TEDxUChicago">' +
     '<h4>Mandel Hall</h4>'+
     '<h4>The University of Chicago</h4>'+
