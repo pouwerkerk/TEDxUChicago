@@ -117,7 +117,9 @@ $(window).load(function() {
 });
   
   var map;
-  var marker;
+  var mandell;
+  var quadclub;
+  var intercon;
   function initialize() {
     geocoder = new google.maps.Geocoder();
     var origin = new google.maps.LatLng(41.7910762, -87.6983111);
@@ -133,8 +135,22 @@ $(window).load(function() {
   }
   
   function dropPin() {
-    var latlng = new google.maps.LatLng(41.7910762, -87.5983111);
-    marker = new google.maps.Marker({
+    var ica = new google.maps.LatLng( 41.8913113, -87.6240589);
+    intercon = new google.maps.Marker({
+      map:map,
+      animation: google.maps.Animation.DROP,
+      position: latlng
+    });
+    var qca = new google.maps.LatLng(  41.7914183, -87.597661);
+    quadclub = new google.maps.Marker({
+      map:map,
+      animation: google.maps.Animation.DROP,
+      position: latlng
+    });
+
+  
+    var mandella = new google.maps.LatLng(41.7910762, -87.5983111);
+    mandell = new google.maps.Marker({
 	  map:map,
       animation: google.maps.Animation.DROP,
       position: latlng
@@ -147,10 +163,10 @@ $(window).load(function() {
     '<h5>Chicago, IL 60637</h5>'+
     '<a href="http://maps.google.com/maps?aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Directions &gt;</a>'+
     '</div>';
-    var infowindow = new google.maps.InfoWindow({
+    var mandellwindow = new google.maps.InfoWindow({
         content: contentString
     });
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map,marker);
+    google.maps.event.addListener(mandell, 'click', function() {
+      mandellwindow.open(map,mandell);
     });
   }
