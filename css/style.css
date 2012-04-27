@@ -133,12 +133,14 @@ a:hover {
 
 #dates {
 	color: #fff;
+	font-size: 11px;
+	line-height: 10px;
 	background: #333;
-	height: 250px;
+	height: 325px;
 }
 
 #dates ul {
-	padding: 10px 20px;
+	padding: 5px 20px;
 }
 
 #dates div {

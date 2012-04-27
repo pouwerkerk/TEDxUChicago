@@ -122,9 +122,9 @@ $(window).load(function() {
   var intercon;
   function initialize() {
     geocoder = new google.maps.Geocoder();
-    var origin = new google.maps.LatLng(41.7910762, -87.6983111);
+    var origin = new google.maps.LatLng(41.7910762, -87.614159);
     var mapOptions = {
-      zoom: 12,
+      zoom: 14,
       center: origin,
       scrollwheel: false,
     disableDefaultUI: true,      
@@ -162,9 +162,36 @@ $(window).load(function() {
     '<h5>5706 S. University Ave.</h5>'+
     '<h5>Chicago, IL 60637</h5>'+
     '<a href="http://maps.google.com/maps?aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Directions &gt;</a>'+
-    '</div>';
+    '</div>'
+    var icwindow = new google.maps.InfoWindow({
+        content: '<div class="infoWindow">'+
+    '<img src="/images/logo-black-small.png" alt="TEDxUChicago" title="TEDxUChicago">' +
+    '<h4>VIP Reception</h4>'+
+    '<h4>Intercontinental Hotel</h4>'+
+    '<h5>505 North Michigan Avenue</h5>'+
+    '<h5>Chicago, IL 60611</h5>'+
+    '<a href="http://maps.google.com/maps?aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Directions &gt;</a>'+
+    '</div>'
+    });
+    var quadwindow = new google.maps.InfoWindow({
+        content: '<div class="infoWindow">'+
+    '<img src="/images/logo-black-small.png" alt="TEDxUChicago" title="TEDxUChicago">' +
+    '<h4>VIP Reception</h4>'+
+    '<h4>Quad Club</h4>'+
+    '<h4>The University of Chicago</h4>'+
+    '<h5>1155 East 57th Street</h5>'+
+    '<h5>Chicago, IL 60637</h5>'+
+    '<a href="http://maps.google.com/maps?aq=&sll=41.790913,-87.598093&sspn=0.005335,0.013078&ie=UTF8&hq=university+of+chicago+mandel+hall&z=16&vpsrc=0&iwloc=A&daddr=1131+East+57th+Street,+Chicago,+IL+60637+%28University+Of+Chicago,+Mandel+Hall%29">Directions &gt;</a>'+
+    '</div>'
+    });   
     var mandellwindow = new google.maps.InfoWindow({
         content: contentString
+    });
+    google.maps.event.addListener(intercon, 'click', function() {
+      icwindow.open(map,intercon);
+    });
+    google.maps.event.addListener(quadclub, 'click', function() {
+      quadwindow.open(map,quadclub);
     });
     google.maps.event.addListener(mandell, 'click', function() {
       mandellwindow.open(map,mandell);
